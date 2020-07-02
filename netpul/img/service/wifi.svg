@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="WiFi" width="16" height="16" stroke-width="1" fill="#fff" stroke="#fff" transform="translate(874 821)"/>
+    </clipPath>
+  </defs>
+  <g id="Card" transform="translate(-874 -821)" clip-path="url(#clip-path)">
+    <g id="wifi_1_" data-name="wifi (1)" transform="translate(873.71 820.709)">
+      <path id="Path_13" data-name="Path 13" d="M3.454,8.67a7.6,7.6,0,0,1,9.727,0" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.382"/>
+      <path id="Path_14" data-name="Path 14" d="M.981,6.218a11.054,11.054,0,0,1,14.618,0" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.382"/>
+      <path id="Path_15" data-name="Path 15" d="M5.893,11.13a4.145,4.145,0,0,1,4.8,0" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.382"/>
+      <line id="Line_6" data-name="Line 6" transform="translate(8.29 13.817)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.382"/>
+    </g>
+  </g>
+</svg>

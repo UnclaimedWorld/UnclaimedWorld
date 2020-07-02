@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="libs/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Netpul - Платежи</title>
+</head>
+
+<body>
+    <a href="#" class="top-banner" style="background-image: url('img/banner-item.png')">
+        <div class="container">
+            <span class="top-banner__text">Get a gift smartphone iPhone XR</span>
+        </div>
+    </a>
+
+
+
+
+
+    <header class="header ">
+        <section class="container grid__row a-c header__row">
+            <div class="header__button-back">
+                <img src="img/icons/arrow-left-gray.svg" alt="">
+            </div>
+            <a href="index.html" class="header__logo">
+                <img src="img/netpul-logo.svg" alt="">
+            </a>
+            <form action="#" class="search-top header__search">
+                <input type="search" class="search-top__input" placeholder="Search">
+                <button class="search-top__button">
+                    <img src="img/icons/search-gray.svg" alt="">
+                </button>
+            </form>
+            <nav class="nav-top header__nav">
+
+                <a href="#" class="nav-top__item" id="header-payments">Payments and transfers</a>
+
+                <a href="#" class="nav-top__item" id="">Take a loan</a>
+
+                <a href="#" class="nav-top__item" id="header-my-cards">My cards</a>
+
+            </nav>
+            <div class="header__phone icon-title grid__row">
+                <img src="img/icons/phone-gray.svg" alt="" class="icon-title__icon">
+                <span class="icon-title__title">0890</span>
+            </div>
+
+            <div class="money-counter money-counter--btn header__money grid__row a-c">
+                <div class="money-counter__item">300.32</div>
+                <div class="money-counter__currency">AZN</div>
+            </div>
+            <a href="#" class="header__avatar"></a>
+
+        </section>
+        <section class="header__menu-payments hidden header__menu-section menu-payments">
+            <div class="container menu-payments__container grid__row j-s">
+
+                <a href="#" class="menu-payments__item payment-type-small grid__row a-c">
+                    <div class="payment-type-small__img">
+                        <img src="img/service/home.svg" alt="" class="payment-type-small__icon">
+                    </div>
+                    <div class="payment-type-small__title">Communal payments</div>
+                </a>
+
+                <a href="#" class="menu-payments__item payment-type-small grid__row a-c">
+                    <div class="payment-type-small__img">
+                        <img src="img/service/tv.svg" alt="" class="payment-type-small__icon">
+                    </div>
+                    <div class="payment-type-small__title">TV</div>
+                </a>
+
+                <a href="#" class="menu-payments__item payment-type-small grid__row a-c">
+                    <div class="payment-type-small__img">
+                        <img src="img/service/wifi.svg" alt="" class="payment-type-small__icon">
+                    </div>
+                    <div class="payment-type-small__title">Internet</div>
+                </a>
+
+                <a href="#" class="menu-payments__item payment-type-small grid__row a-c">
+                    <div class="payment-type-small__img">
+                        <img src="img/service/flash.svg" alt="" class="payment-type-small__icon">
+                    </div>
+                    <div class="payment-type-small__title">Credit repayment</div>
+                </a>
+
+                <a href="#" class="menu-payments__item payment-type-small grid__row a-c">
+                    <div class="payment-type-small__img">
+                        <img src="img/service/smartphone.svg" alt="" class="payment-type-small__icon">
+                    </div>
+                    <div class="payment-type-small__title">Mobile communication</div>
+                </a>
+
+                <a href="#" class="menu-payments__item payment-type-small grid__row a-c">
+                    <div class="payment-type-small__img">
+                        <img src="img/service/credit-card.svg" alt="" class="payment-type-small__icon">
+                    </div>
+                    <div class="payment-type-small__title">Transfers to card</div>
+                </a>
+
+                <a href="#" class="menu-payments__item payment-type-small grid__row a-c">
+                    <div class="payment-type-small__img">
+                        <img src="img/service/send.svg" alt="" class="payment-type-small__icon">
+                    </div>
+                    <div class="payment-type-small__title">Games</div>
+                </a>
+
+                <a href="#" class="menu-payments__item payment-type-small grid__row a-c">
+                    <div class="payment-type-small__img">
+                        <img src="img/service/menu.svg" alt="" class="payment-type-small__icon">
+                    </div>
+                    <div class="payment-type-small__title">Shop by catalog</div>
+                </a>
+
+            </div>
+        </section>
+        <section class="header__menu-cards hidden header__menu-section menu-cards">
+            <div class="menu-cards__container container">
+                <div class="menu-cards__slider">
+                    <article class="menu-cards__item">
+                        <div class="menu-cards__card credit-card" style="background-image: url('img/card/card-1.png')">
+                            <div class="credit-card__top-left">
+                                <img src="img/atabank-logo.svg" class="credit-card__logo credit-card__atabank" alt="">
+                            </div>
+                            <div class="credit-card__top-right">
+                                <img src="img/netpul-logo-white.svg" class="credit-card__logo credit-card__netpul" alt="">
+                            </div>
+                            <div class="credit-card__bottom-left">
+                                <div class="credit-card__number">*1213</div>
+                            </div>
+                            <div class="credit-card__bottom-right">
+                                <img src="img/icons/mc-symbol.svg" alt="" class="credit-card__master-card">
+                            </div>
+                        </div>
+                        <div class="menu-cards__title">BASE CARD</div>
+                    </article>
+
+                    <article class="menu-cards__item">
+                        <div class="menu-cards__card credit-card" style="background-image: url('img/card/card-3.png')">
+                            <div class="credit-card__top-left">
+                                <img src="img/icons/kapital-bank-white.svg" class="credit-card__logo credit-card__kapital" alt="">
+                            </div>
+                            <div class="credit-card__top-right">
+                                <img src="img/netpul-logo-white.svg" class="credit-card__logo" alt="">
+                            </div>
+                            <div class="credit-card__bottom-left">
+                                <div class="credit-card__number">*3000</div>
+                            </div>
+                            <div class="credit-card__bottom-right">
+                                <img src="img/icons/mc-symbol.svg" alt="" class="credit-card__master-card">
+                            </div>
+                        </div>
+                        <div class="menu-cards__title">Personal card</div>
+                    </article>
+
+                    <article class="menu-cards__item">
+                        <div class="menu-cards__card  credit-card--add credit-card" style="background-image: url('img/card/card-4.png')">
+                            <div class="credit-card__center">
+                                <div class="card-space">
+                                    <div class="card-space__text">
+                                        <div class="card-space__icon">
+                                            <img src="img/icons/plus-gray.svg" alt="">
+                                        </div>
+                                        <div class="card-space__title">ADD CARD</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credit-card__bottom-right">
+                                <div class="credit-card__group grid__row">
+                                    <div class="round-icon">
+                                        <img src="img/icons/mc-symbol.svg" alt="">
+                                    </div>
+                                    <div class="round-icon">
+                                        <img src="img/icons/union-pay.svg" alt="">
+                                    </div>
+                                    <div class="round-icon">
+                                        <img src="img/icons/visa.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-cards__item">
+                        <div class="menu-cards__card credit-card" style="background-image: url('img/card/card-2.png')">
+                            <div class="credit-card__top-left">
+                                <img src="img/atabank-logo.svg" class="credit-card__logo credit-card__atabank" alt="">
+                            </div>
+                            <div class="credit-card__top-right">
+                                <img src="img/netpul-logo-white.svg" class="credit-card__logo credit-card__netpul" alt="">
+                            </div>
+                            <div class="credit-card__bottom-left">
+                                <div class="credit-card__number">*2500</div>
+                            </div>
+                            <div class="credit-card__bottom-right">
+                                <img src="img/icons/visa-white.svg" alt="" class="credit-card__visa">
+                            </div>
+                        </div>
+                        <div class="menu-cards__title">Credit card</div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="overlay hidden"></div>
+    <article class="section-head-loan container grid__row">
+
+        <section class="section-head-loan__card credit-card ">
+            <div class="credit-card__top-left">
+                <img src="img/atabank-logo.svg" class="credit-card__logo credit-card__atabank" alt="">
+            </div>
+            <div class="credit-card__top-right">
+                <img src="img/netpul-logo-white.svg" class="credit-card__logo credit-card__netpul" alt="">
+            </div>
+
+            <div class="credit-card__bottom-left">
+                <div class="credit-card__number">
+                    1234&nbsp;&nbsp;5678&nbsp;&nbsp;9010&nbsp;&nbsp;1213
+                </div>
+            </div>
+            <div class="credit-card__bottom-right">
+                <button class="credit-card__btn btn-outline">
+                    <span class="web">PAYMENT HISTORY</span>
+                    <span class="mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                            <g transform="translate(-260 -188)">
+                                <g transform="translate(258.4 186.4)">
+                                    <line data-name="Line 141" x1="11.2" transform="translate(2.4 8)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" />
+                                    <line data-name="Line 142" x1="14.4" transform="translate(2.4 4.8)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" />
+                                    <line data-name="Line 143" x1="14.4" transform="translate(2.4 11.2)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" />
+                                    <line data-name="Line 144" x1="11.2" transform="translate(2.4 14.4)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" />
+                                </g>
+                            </g>
+                        </svg>
+
+                    </span>
+                </button>
+            </div>
+            <div class="credit-card__center">
+                <div class="show-balance show-balance--up">
+                    <div class="show-balance__title">Netpul balance</div>
+                    <div class="show-balance__item">
+                        500.25
+                        <div class="show-balance__indicator">
+                            <img src="img/icons/arrow-up-white.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-head-loan__take-loan block-take-loan">
+            <h3 class="block-take-loan__heading heading-icon grid__row a-c">
+                <img src="img/icons/clock.svg" alt="" class="heading-icon__icon">
+                <span class="heading-icon__title">Take a loan in 5 minutes</span>
+                <img src="img/icons/info-gray.svg" alt="" class="heading-icon__icon heading-icon__info">
+            </h3>
+            <div class="block-take-loan__range range-block">
+                <div class="range-block__heading">Credit amount</div>
+                <input type="range" class="range-block__scale range-item">
+                <div class="grid__row j-s">
+
+
+                    <div class="range-block__markup">100</div>
+
+                    <div class="range-block__markup">1000</div>
+
+                    <div class="range-block__markup">5000</div>
+
+                    <div class="range-block__markup">10000</div>
+
+                    <div class="range-block__markup">20000</div>
+
+                </div>
+            </div>
+            <div class="block-take-loan__range range-block">
+                <div class="range-block__heading">Crediting period</div>
+                <input type="range" class="range-block__scale range-item">
+                <div class="grid__row j-s">
+
+
+                    <div class="range-block__markup">1 month</div>
+
+                    <div class="range-block__markup">2 month</div>
+
+                    <div class="range-block__markup">3 month</div>
+
+                    <div class="range-block__markup"> 6 month</div>
+
+                    <div class="range-block__markup">1 year</div>
+
+                </div>
+            </div>
+            <div class="grid__row a-c">
+                <button class="button button--green block-take-loan__button">TAKE A LOAN</button>
+                <div class="money-counter block-take-loan__money grid__row a-c">
+                    <div class="money-counter__item">13200</div>
+                    <div class="money-counter__currency">AZN/Mo</div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <article class="section-payment-operator container">
+        <h3 class="section-payment-operator__heading">Azercell</h3>
+        <div class="grid__row">
+            <section class="section-payment-operator__block content-block content-block--card-pay">
+                <header class="content-block__heading grid__row">
+                    <button class="btn-round">
+                        <img src="img/icons/arrow-left-gray.svg" alt="">
+                    </button>
+                    <div class="icon-info grid__row">
+                        <div class="icon-info__img">
+                            <img src="img/payment-item/bakcell.png" alt="">
+                        </div>
+                        <div class="icon-info__text">
+                            <div class="icon-info__title">AZERCELL</div>
+                            <div class="icon-info__subtitle">Refill</div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="wallet-drop">
+                    <div class="wallet-drop__head wallet-block grid__row a-c">
+                        <div class="wallet-block__icon">
+                            <img src="img/icons/wallet-white.svg" alt="">
+                        </div>
+                        <div class="wallet-block__title">Your wallet</div>
+                        <div class="wallet-block__label">+ Cashback</div>
+                    </div>
+
+                    <div class="wallet-drop__body panels-list">
+
+                        <div class="panels-list__item panel-item grid__row a-c">
+                            <div class="panel-item__icon">
+                                <img src="img/icons/mc-symbol.svg" alt="">
+                            </div>
+                            <div class="panel-item__title">
+                                MasterCard 0890
+                            </div>
+                        </div>
+
+                        <div class="panels-list__item panel-item grid__row a-c">
+                            <div class="panel-item__icon">
+                                <img src="img/icons/mc-symbol.svg" alt="">
+                            </div>
+                            <div class="panel-item__title">
+                                MasterCard 0890
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <footer class="content-block__footer grid__row">
+                    <button class="content-block__btn-main button button--green">PAY</button>
+                    <button class="content-block__btn-second button button--gray">
+                        <span class="web">ADD TO FAVORITES</span>
+                        <img src="img/icons/star-gray.svg" alt="" class="mobile">
+                    </button>
+                    <button class="content-block__regular button button--blue grid__row a-c">
+                        <img src="img/icons/calendar.svg" alt="" class="button__icon">
+                        <span class="web">REGULAR PAYMENT</span>
+                    </button>
+                </footer>
+            </section>
+
+            <aside class="section-payment-operator__aside info-block">
+                <div class="info-block__heading icon-info grid__row">
+                    <div class="icon-info__img">
+                        <img src="img/payment-item/bakcell.png" alt="">
+                    </div>
+                    <div class="icon-info__text">
+                        <div class="icon-info__title">Azercell</div>
+                        <div class="icon-info__subtitle">+994 100 5050</div>
+                    </div>
+                </div>
+
+                <div class="info-block__item info-results">
+                    <div class="info-results__title">Amount</div>
+                    <div class="info-results__subtitle">
+                        200.80
+                        <span class="currency">AZN</span>
+                    </div>
+                </div>
+
+                <div class="info-block__item info-results">
+                    <div class="info-results__title">Cashback</div>
+                    <div class="info-results__subtitle">
+                        + 2
+                        <span class="currency">AZN</span>
+                    </div>
+                </div>
+
+                <div class="info-block__item info-results">
+                    <div class="info-results__title">Fee</div>
+                    <div class="info-results__subtitle">
+                        0.10
+                        <span class="currency">AZN</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container grid__row j-s">
+
+
+
+            <ul class="footer__list simple-list footer__list--0">
+
+
+                <li class="simple-list__title">
+                    <a href="#">Payments and transfers</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Favorites</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Story</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Fill up a purse</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Withdraw money</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer__list simple-list footer__list--1">
+
+
+                <li class="simple-list__title">
+                    <a href="#">Payments and shopping</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Mobile communication</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Receipts</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Traffic police fines</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Taxes</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Games and services</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Gift cards</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Discounts and bonuses</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer__list simple-list footer__list--2">
+
+
+                <li class="simple-list__title">
+                    <a href="#">My operations</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Personal Information</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Identication</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Binding cards to the wallet</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Mastercard</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Virtual card</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer__list simple-list footer__list--3">
+
+
+                <li class="simple-list__title">
+                    <a href="#">Feedback</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Contacts</a>
+                </li>
+
+
+                <li class="simple-list__item">
+                    <a href="#">Feedback</a>
+                </li>
+
+            </ul>
+
+
+            <aside class="footer__aside">
+                <div class="simple-list">
+                    <div class="simple-list__title">We are in social networks</div>
+                </div>
+                <div class="footer__social social grid__row">
+                    <a href="#" class="social__item">
+                        <img src="img/social/facebook-gray.svg" alt="" class="social__icon">
+                        <span class="social__counter">684</span>
+                    </a>
+                    <a href="#" class="social__item">
+                        <img src="img/social/odnoklassniki-gray.svg" alt="" class="social__icon">
+                        <span class="social__counter">45</span>
+                    </a>
+                    <a href="#" class="social__item">
+                        <img src="img/social/twitter-gray.svg" alt="" class="social__icon">
+                    </a>
+                    <a href="#" class="social__item">
+                        <img src="img/social/instagram-gray.svg" alt="" class="social__icon">
+                    </a>
+                </div>
+                <div class="grid__row">
+                    <a href="#" class="footer__app">
+                        <img src="img/google-play.png" alt="">
+                    </a>
+                    <a href="#" class="footer__app">
+                        <img src="img/appstore.png" alt="">
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </footer>
+    <script src="libs/libs.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function headerCards() {
+            var cards = document.querySelector('.menu-cards__slider');
+            if (!cards) return;
+
+            var slider = new Flickity(cards, {
+                contain: true,
+                cellAlign: 'left',
+                wrapAround: true,
+                pageDots: false
+            })
+        }
+        headerCards();
+    </script>
+
+</body>
+
+</html>

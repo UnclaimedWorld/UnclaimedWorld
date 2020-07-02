@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>Toptoza - Выездная химчистка</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="page">
+    <header class="header container">
+        <div class="header__logo">
+            <img src="img/logo.svg" alt="">
+        </div>
+        <nav class="header__nav header-nav">
+            <a href="#section-main" class="header-nav__item header-nav__item--active">Главная</a>
+            <a href="#section-about" class="header-nav__item">О нас</a>
+            <a href="#section-features" class="header-nav__item">Преимущества</a>
+            <a href="#section-cost" class="header-nav__item">Цены на химчистку</a>
+            <a href="#section-contacts" class="header-nav__item">Контакты</a>
+        </nav>
+        <a href="//t.me/orifjonovmirazim" class="header__telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -35 511.99993 511">
+                <use xlink:href="#social-telegram"></use>
+            </svg>
+        </a>
+        <a href="tel: +998994024100" class="header__phone phone-label">
+            <span class="phone-label__small">(+998 99)</span> 402 41 00
+        </a>
+        <a href="#" class="header__button button" data-modal="#order-1">
+            Рассчитать стоимость
+        </a>
+    </header>
+    <section class="hero-slider">
+        <div class="hero-slider__item">
+            <img src="img/hero-banner/header-1.jpg" alt="" class="hero-slider__background">
+            <div class="hero-slider__container container">
+                <div class="hero-slider__content banner-info">
+                    <div class="banner-info__heading">Выездная химчистка мебели и ковров в Вашем доме или помещении. Работаем 24/7. Не устроит качество, вернём деньги.</div>
+                    <a href="#" class="banner-info__button button button--second" data-modal="#order-1">
+                        Рассчитать стоимость
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="wrapper">
+        <div class="wrapper__top" id="section-main"></div>
+        <section class="about-section" id="section-about">
+            <div class="about-section__container container">
+                <div class="about-section__info">
+                    <div class="about-section__category category-section">
+                        О компании
+                    </div>
+                    <h2 class="about-section__heading heading-section">
+                        Кто мы?
+                    </h2>
+                    <p class="about-section__description description-section">
+                        Компания TOPtoza занимается исключительно выездной химчисткой мебели и ковров. Благодаря узкой специализации, мы с каждым днём улучшаем качество предоставляемых услуг, не забывая о сервисе.
+                    </p>
+                    <p class="about-section__description description-section">
+                        Строго придерживаемся внутренних правил и принципов, среди которых - 100% удовлетворение каждого заказчика, строгое придерживаете технологий химчистки и техники безопасности, а так же непрерывная работа над улучшением предоставляемых услуг
+                    </p>
+                    <p class="about-section__description description-section">
+                        Наша цель - быть лучшими в том, что мы делаем, и мы ежедневно трудимся над этим!
+                    </p>
+
+                    <div class="about-section__social social">
+                        <a href="#" class="social__item social__item--counter">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="7.713" height="14.266" viewBox="0 0 7.713 14.266">
+                                <use xlink:href="#social-facebook"></use>
+                            </svg>
+                            <div class="social__counter">684</div>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+                                <use xlink:href="#social-youtube"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="13.346" height="13.346" viewBox="0 0 13.346 13.346">
+                                <use xlink:href="#social-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+                <form action="#" class="order-form about-section__form">
+
+                    <h3 class="order-form__heading">
+                        Заказать услугу
+                    </h3>
+                    <p class="order-form__subtitle">
+                        Закажите химчистку мебели на дому и
+                        забудьте о грязной мебели.
+                    </p>
+                    <label class="order-form__item label-form">
+                        <div class="label-form__title">Ваше имя</div>
+                        <input type="text" class="label-form__row inputfield">
+                    </label>
+                    <label class="order-form__item label-form">
+                        <div class="label-form__title">Ваше телефон</div>
+                        <input type="text" class="label-form__row inputfield">
+                    </label>
+                    <label class="order-form__item label-form">
+                        <div class="label-form__title">Ваш email</div>
+                        <input type="email" class="label-form__row inputfield">
+                    </label>
+                    <div class="order-form__item label-form">
+                        <div class="label-form__title">
+                            Выберите услугу
+                        </div>
+                        <div class="label-form__row input-select" data-widget='dropdown'>
+                            <div class="input-select__heading" data-widget-partial="heading">Выберите услугу</div>
+                            <div class="input-select__wrap">
+                                <div class="input-select__body">
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Химчистка ковров" class="input-select__input">
+                                        Химчистка ковров
+                                    </label>
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Матрас" class="input-select__input">
+                                        Матрас
+                                    </label>
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Двухместный диван" class="input-select__input">
+                                        Двухместный диван
+                                    </label>
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Трёхместный диван" class="input-select__input">
+                                        Трёхместный диван
+                                    </label>
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Четырёхместный диван" class="input-select__input">
+                                        Четырёхместный диван
+                                    </label>
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Пятиместный диван" class="input-select__input">
+                                        Пятиместный диван
+                                    </label>
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Спальное место" class="input-select__input">
+                                        Спальное место
+                                    </label>
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Кресло" class="input-select__input">
+                                        Кресло
+                                    </label>
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Пуф" class="input-select__input">
+                                        Пуф
+                                    </label>
+
+                                    <label class="input-select__item">
+                                        <input type="radio" name="service" value="Стул" class="input-select__input">
+                                        Стул
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="order-form__button button button--medium">
+                        Отправить заявку
+                    </button>
+                    <small class="order-form__small">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" class="icon">
+                            <use xlink:href="#info"></use>
+                        </svg>
+                        Нажимая кнопку - "Отправить заявку". вы соглашайтесь, с обработкой персональных данных
+                    </small>
+                </form>
+
+            </div>
+        </section>
+        <section class="service-section" id="section-features">
+            <div class="service-section__container container">
+                <div class="service-section__content">
+                    <div class="service-section__category category-section">
+                        Почему мы?
+                    </div>
+                    <h2 class="service-section__heading heading-section">
+                        Премиальные клининг услуги
+                    </h2>
+                    <div class="service-section__block">
+                        <div class="service-section__wrap">
+
+                            <div class="service-section__item feature-media">
+                                <div class="feature-media__substrate">
+                                    <img src="img/service-section/category-1.svg" class="feature-media__icon" alt="">
+                                </div>
+                                <div class="feature-media__title">Профессионализм</div>
+                                <div class="feature-media__subtitle">В штате квалифицированные сотрудники, прошедшие специальное обучение.</div>
+                            </div>
+
+                            <div class="service-section__item feature-media">
+                                <div class="feature-media__substrate">
+                                    <img src="img/service-section/category-2.svg" class="feature-media__icon" alt="">
+                                </div>
+                                <div class="feature-media__title">Удобный график</div>
+                                <div class="feature-media__subtitle">Возможность заказа в любое удобное для вас время 24/7.</div>
+                            </div>
+
+                            <div class="service-section__item feature-media">
+                                <div class="feature-media__substrate">
+                                    <img src="img/service-section/category-3.svg" class="feature-media__icon" alt="">
+                                </div>
+                                <div class="feature-media__title">Безопасные средства</div>
+                                <div class="feature-media__subtitle">Без выходных.Никакого вреда для вашего здоровья и здоровью ваших близких.</div>
+                            </div>
+
+                            <div class="service-section__item feature-media">
+                                <div class="feature-media__substrate">
+                                    <img src="img/service-section/category-4.svg" class="feature-media__icon" alt="">
+                                </div>
+                                <div class="feature-media__title">Лучшее оборудование</div>
+                                <div class="feature-media__subtitle">Использование немецкого оборудования «Karcher», которая доказала своё качество.</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <img src="img/service-section/cover.png" alt="" class="service-section__cover">
+            </div>
+        </section>
+        <section class="store-section">
+            <div class="store-section__container container" id="section-cost">
+                <header class="store-section__header">
+                    <div class="store-section__category category-section">
+                        Услуги
+                    </div>
+                    <h2 class="store-section__heading heading-section">
+                        Цены на химчистку
+                    </h2>
+                    <button class="store-section__button button button--second" data-modal="#order-1">
+                        Рассчитать стоимость
+                    </button>
+                </header>
+                <div class="store-section__block">
+                    <div class="store-section__wrap">
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-1.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Химчистка ковров</div>
+
+                            <button class="product-item__button button button--small" data-modal="#order-1">от 10.000 сум/кв.м</button>
+                        </figure>
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-1.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Матрас</div>
+
+                            <button class="product-item__button button button--small" data-modal="#order-1">от 99.000 сум</button>
+                        </figure>
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-1.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Двухместный диван</div>
+                            <div class="product-item__subtitle">2 посадочных места</div>
+                            <button class="product-item__button button button--small" data-modal="#order-1">от 69.000 сум</button>
+                        </figure>
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-5.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Трёхместный диван</div>
+                            <div class="product-item__subtitle">3 посадочных места</div>
+                            <button class="product-item__button button button--small" data-modal="#order-1">от 104.000 сум</button>
+                        </figure>
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-5.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Четырёхместный диван</div>
+                            <div class="product-item__subtitle">4 посадочных места</div>
+                            <button class="product-item__button button button--small" data-modal="#order-1">199.000 сум</button>
+                        </figure>
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-4.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Пятиместный диван</div>
+                            <div class="product-item__subtitle">5 посадочных места</div>
+                            <button class="product-item__button button button--small" data-modal="#order-1">249.000 сум</button>
+                        </figure>
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-5.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Спальное место</div>
+
+                            <button class="product-item__button button button--small" data-modal="#order-1">149.000 сум</button>
+                        </figure>
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-6.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Кресло</div>
+
+                            <button class="product-item__button button button--small" data-modal="#order-1">39.000 сум</button>
+                        </figure>
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-7.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Пуф</div>
+
+                            <button class="product-item__button button button--small" data-modal="#order-1">19.000 сум</button>
+                        </figure>
+                        <figure class="store-section__item product-item">
+                            <img src="img/products/product-8.png" alt="" class="product-item__cover">
+                            <div class="product-item__title">Стул</div>
+
+                            <button class="product-item__button button button--small" data-modal="#order-1">14.000 сум</button>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="store-section__additional additional-content container">
+                <div class="additional-content__title heading-section">
+                    Отправьте фотографию в телеграм и получите точный <span class="heading-section__important">точный рассчет стоимости</span>.
+                </div>
+                <a href="//t.me/orifjonovmirazim" class="additional-content__button button button--second">Отправить фото</a>
+            </div>
+        </section>
+        <section class="photo-section">
+            <div class="photo-section__container container">
+                <div class="photo-section__category category-section category-section--both">
+                    Фотогалерея
+                </div>
+                <h2 class="photo-section__heading heading-section">
+                    Результаты наших работ
+                </h2>
+                <div class="photo-section__block">
+                    <div class="photo-section__wrap">
+
+                        <div class="photo-section__item" style="background-image: url('img/photo-section/item-1.jpg')">
+                        </div>
+
+                        <div class="photo-section__item" style="background-image: url('img/photo-section/item-2.jpg')">
+                        </div>
+
+                        <div class="photo-section__item" style="background-image: url('img/photo-section/item-3.jpg')">
+                        </div>
+
+                        <div class="photo-section__item" style="background-image: url('img/photo-section/item-4.jpg')">
+                        </div>
+
+                        <div class="photo-section__item" style="background-image: url('img/photo-section/item-5.jpg')">
+                        </div>
+
+                        <div class="photo-section__item" style="background-image: url('img/photo-section/item-6.jpg')">
+                        </div>
+
+                        <div class="photo-section__item" style="background-image: url('img/photo-section/item-7.jpg')">
+                        </div>
+
+                        <div class="photo-section__item" style="background-image: url('img/photo-section/item-8.jpg')">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <section class="photo-section__additional clients-section">
+                <div class="clients-section__container container">
+                    <div class="clients-section__category category-section category-section--both">
+                        Заказчики
+                    </div>
+                    <h2 class="clients-section__heading heading-section">
+                        Нам доверяют
+                    </h2>
+                    <div class="clients-section__slider">
+
+                        <a href="#" class="clients-section__item">
+                            <img src="img/clients/sharpie.svg" alt="" class="clients-section__img">
+                        </a>
+
+                        <a href="#" class="clients-section__item">
+                            <img src="img/clients/prismacolor.svg" alt="" class="clients-section__img">
+                        </a>
+
+                        <a href="#" class="clients-section__item">
+                            <img src="img/clients/elmers.svg" alt="" class="clients-section__img">
+                        </a>
+
+                        <a href="#" class="clients-section__item">
+                            <img src="img/clients/contigo.svg" alt="" class="clients-section__img">
+                        </a>
+
+                        <a href="#" class="clients-section__item">
+                            <img src="img/clients/rubbermaid.svg" alt="" class="clients-section__img">
+                        </a>
+
+                        <a href="#" class="clients-section__item">
+                            <img src="img/clients/aprica.svg" alt="" class="clients-section__img">
+                        </a>
+
+                        <a href="#" class="clients-section__item">
+                            <img src="img/clients/sharpie.svg" alt="" class="clients-section__img">
+                        </a>
+
+                        <a href="#" class="clients-section__item">
+                            <img src="img/clients/prismacolor.svg" alt="" class="clients-section__img">
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="wrapper__bottom" id="section-contacts"></div>
+
+        <form action="#" class="order-form mobile-form">
+
+            <h3 class="order-form__heading">
+                Заказать услугу
+            </h3>
+            <p class="order-form__subtitle">
+                Закажите химчистку мебели на дому и
+                забудьте о грязной мебели.
+            </p>
+            <label class="order-form__item label-form">
+                <div class="label-form__title">Ваше имя</div>
+                <input type="text" class="label-form__row inputfield">
+            </label>
+            <label class="order-form__item label-form">
+                <div class="label-form__title">Ваше телефон</div>
+                <input type="text" class="label-form__row inputfield">
+            </label>
+            <label class="order-form__item label-form">
+                <div class="label-form__title">Ваш email</div>
+                <input type="email" class="label-form__row inputfield">
+            </label>
+            <div class="order-form__item label-form">
+                <div class="label-form__title">
+                    Выберите услугу
+                </div>
+                <div class="label-form__row input-select" data-widget='dropdown'>
+                    <div class="input-select__heading" data-widget-partial="heading">Выберите услугу</div>
+                    <div class="input-select__wrap">
+                        <div class="input-select__body">
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Химчистка ковров" class="input-select__input">
+                                Химчистка ковров
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Матрас" class="input-select__input">
+                                Матрас
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Двухместный диван" class="input-select__input">
+                                Двухместный диван
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Трёхместный диван" class="input-select__input">
+                                Трёхместный диван
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Четырёхместный диван" class="input-select__input">
+                                Четырёхместный диван
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Пятиместный диван" class="input-select__input">
+                                Пятиместный диван
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Спальное место" class="input-select__input">
+                                Спальное место
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Кресло" class="input-select__input">
+                                Кресло
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Пуф" class="input-select__input">
+                                Пуф
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Стул" class="input-select__input">
+                                Стул
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="order-form__button button button--medium">
+                Отправить заявку
+            </button>
+            <small class="order-form__small">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" class="icon">
+                    <use xlink:href="#info"></use>
+                </svg>
+                Нажимая кнопку - "Отправить заявку". вы соглашайтесь, с обработкой персональных данных
+            </small>
+        </form>
+
+    </article>
+    <section class="footer-banner">
+        <img src="img/footer/cover.jpg" alt="" class="footer-banner__background">
+        <div class="footer-banner__container container">
+            <form class="footer-banner__form">
+                <div class="footer-banner__heading">
+                    Оставьте заявку и <strong class="footer-banner__important">получите 15% скидку</strong>
+                </div>
+                <div class="footer-banner__label">
+                    <!-- <input type="phone" placeholder="Ваш телефон" class="footer-banner__input inputfield inputfield--neutral-border"> -->
+                    <button class="footer-banner__button button button--second" data-modal="#order-1">
+                        ОСТАВИТЬ ЗАЯВКУ
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__top container">
+            <div class="footer__logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="footer__contact contact-address contact-address--ml-no-figure">
+                <div class="contact-address__figure">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21.678" height="21.717" viewBox="0 0 21.678 21.717">
+                        <use xlink:href="#map-pin"></use>
+                    </svg>
+                </div>
+                <div class="contact-address__title">Наш адрес</div>
+                <div class="contact-address__subtitle">Г. Ташкент, ул. Абдулла Кадырий, 35</div>
+            </div>
+            <div class="footer__contact contact-address contact-address--ml-no-figure">
+                <div class="contact-address__figure">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21.678" height="21.717" viewBox="0 0 21.678 21.717">
+                        <use xlink:href="#phone-call"></use>
+                    </svg>
+                </div>
+                <div class="contact-address__title">Контакты</div>
+                <div class="contact-address__subtitle">
+                    <a class="contact-address__link" href="tel: +998994024100">+998 99 402 41 00</a>
+                    <a class="contact-address__link" href="mailto: toptoza@inbox.ru">toptoza@inbox.ru</a>
+                    <a class="contact-address__link" href="//t.me/orifjonovmirazim">@OrifjonovMirazim</a>
+                </div>
+            </div>
+            <button class="footer__button button" data-modal="#order-1">РАССЧИТАТЬ СТОИМОСТЬ</button>
+        </div>
+        <div class="footer__bottom container">
+            <div class="footer__copyright">
+                OOO "TOPTOZA" © 2019. Все права защищены.
+            </div>
+            <div class="footer__social">
+                <div class="footer__title">Следите за акциями и новостями в социальных сетях</div>
+
+                <div class="footer__social-row social">
+                    <a href="#" class="social__item social__item--counter">
+                        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="7.713" height="14.266" viewBox="0 0 7.713 14.266">
+                            <use xlink:href="#social-facebook"></use>
+                        </svg>
+                        <div class="social__counter">684</div>
+                    </a>
+                    <a href="#" class="social__item">
+                        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+                            <use xlink:href="#social-youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__item">
+                        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="13.346" height="13.346" viewBox="0 0 13.346 13.346">
+                            <use xlink:href="#social-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="up-button hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11.275" height="11.275" viewBox="0 0 11.275 11.275">
+            <use xlink:href="#arrow-up"></use>
+        </svg>
+    </div>
+    <div hidden>
+        <svg>
+            <defs>
+                <g id="info" class="icon-stroke" transform="translate(0.727 0.727)">
+                    <circle cx="7.273" cy="7.273" r="7.273" stroke-width="1.455" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                    <line y1="2.909" transform="translate(7.273 7.273)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.455" />
+                    <line transform="translate(7.273 4.364)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.455" />
+                </g>
+                <g id="social-facebook" class="icon-fill">
+                    <g transform="translate(-22.077)">
+                        <path d="M29.5,0l-1.85,0a3.249,3.249,0,0,0-3.421,3.511V5.129h-1.86a.291.291,0,0,0-.291.291V7.766a.291.291,0,0,0,.291.291h1.86v5.918a.291.291,0,0,0,.291.291h2.427a.291.291,0,0,0,.291-.291V8.057h2.175a.291.291,0,0,0,.291-.291V5.421a.291.291,0,0,0-.291-.291H27.236V3.757c0-.66.157-.994,1.016-.994H29.5a.291.291,0,0,0,.291-.291V.294A.291.291,0,0,0,29.5,0Z" />
+                    </g>
+                </g>
+                <g id="social-twitter" class="icon-fill">
+                    <g>
+                        <path d="M15.072,49.45a6.442,6.442,0,0,1-1.78.488,3.073,3.073,0,0,0,1.359-1.708,6.175,6.175,0,0,1-1.959.748,3.09,3.09,0,0,0-5.345,2.113,3.182,3.182,0,0,0,.072.7,8.746,8.746,0,0,1-6.369-3.232A3.091,3.091,0,0,0,2,52.693a3.052,3.052,0,0,1-1.4-.381v.034a3.1,3.1,0,0,0,2.476,3.036,3.084,3.084,0,0,1-.81.1,2.732,2.732,0,0,1-.585-.053,3.119,3.119,0,0,0,2.887,2.153A6.209,6.209,0,0,1,.739,58.9,5.788,5.788,0,0,1,0,58.86a8.7,8.7,0,0,0,4.74,1.387,8.734,8.734,0,0,0,8.795-8.793c0-.137,0-.268-.011-.4A6.164,6.164,0,0,0,15.072,49.45Z" transform="translate(0 -48)" />
+                    </g>
+                </g>
+                <g id="social-instagram" class="icon-fill">
+                    <path d="M9.37,0H3.976A3.98,3.98,0,0,0,0,3.976V9.37a3.98,3.98,0,0,0,3.976,3.976H9.37A3.98,3.98,0,0,0,13.346,9.37V3.976A3.98,3.98,0,0,0,9.37,0ZM12,9.37A2.633,2.633,0,0,1,9.37,12H3.976A2.633,2.633,0,0,1,1.343,9.37V3.976A2.633,2.633,0,0,1,3.976,1.343H9.37A2.633,2.633,0,0,1,12,3.976V9.37Z" />
+                    <path d="M136.452,133a3.452,3.452,0,1,0,3.452,3.452A3.456,3.456,0,0,0,136.452,133Zm0,5.561a2.109,2.109,0,1,1,2.109-2.109A2.109,2.109,0,0,1,136.452,138.561Z" transform="translate(-129.779 -129.779)" />
+                    <circle cx="0.827" cy="0.827" r="0.827" transform="translate(9.304 2.42)" />
+                </g>
+                <g id="map-pin" class="icon-stroke" transform="translate(-2)">
+                    <path d="M18.877,8.939c0,6.175-7.939,11.467-7.939,11.467S3,15.113,3,8.939a7.939,7.939,0,1,1,15.877,0Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    <circle cx="2.646" cy="2.646" r="2.646" transform="translate(8.292 6.292)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                </g>
+                <g id="phone-call" class="icon-stroke">
+                    <g>
+                        <path d="M14.3,4.768a4.71,4.71,0,0,1,3.721,3.721M14.3,1a8.478,8.478,0,0,1,7.489,7.48M20.847,16v2.826a1.884,1.884,0,0,1-2.054,1.884,18.643,18.643,0,0,1-8.13-2.892,18.37,18.37,0,0,1-5.652-5.652A18.643,18.643,0,0,1,2.12,4,1.884,1.884,0,0,1,3.994,1.942H6.82A1.884,1.884,0,0,1,8.7,3.562a12.1,12.1,0,0,0,.659,2.647A1.884,1.884,0,0,1,8.94,8.2l-1.2,1.2A15.072,15.072,0,0,0,13.4,15.046l1.2-1.2a1.884,1.884,0,0,1,1.988-.424,12.1,12.1,0,0,0,2.647.659A1.884,1.884,0,0,1,20.847,16Z" transform="translate(-1.111)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    </g>
+                </g>
+                <g id="cross" class="icon-stroke" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </g>
+                <g id="arrow-up" transform="translate(1 10.275) rotate(-90)">
+                    <line x2="9.275" transform="translate(0 4.638)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    <path d="M0,9.275,4.638,4.638,0,0" transform="translate(4.638)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </g>
+                <g id="social-telegram">
+                    <path d="m121.453125 253.171875 63.554687 158.886719 82.75-82.753906 141.535157 112.503906 102.707031-441.308594-512 205.480469zm-39.933594-47.640625 244.046875-97.945312-194.074218 117.363281zm287.535157-89.25-161.980469 148.1875-19.484375 73.425781-36.035156-90.085937zm-149.851563 219.230469 9.816406-36.996094 15.144531 12.035156zm171.65625 53.394531-147.386719-117.152344 221.902344-203.007812zm0 0" />
+                </g>
+                <g id="social-youtube">
+                    <path d="M90,26.958C90,19.525,83.979,13.5,76.55,13.5h-63.1C6.021,13.5,0,19.525,0,26.958v36.084 C0,70.475,6.021,76.5,13.45,76.5h63.1C83.979,76.5,90,70.475,90,63.042V26.958z M36,60.225V26.33l25.702,16.947L36,60.225z" />
+                </g>
+            </defs>
+        </svg>
+    </div>
+
+    <section class="modal modal--hidden order-modal" id="order-1">
+
+        <form action="#" class="order-form order-form--close  modal__window">
+
+            <div class="order-form__close" data-modal-close>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </div>
+
+            <h3 class="order-form__heading">
+                Заказать услугу
+            </h3>
+            <p class="order-form__subtitle">
+                Закажите химчистку мебели на дому и
+                забудьте о грязной мебели.
+            </p>
+            <label class="order-form__item label-form">
+                <div class="label-form__title">Ваше имя</div>
+                <input type="text" class="label-form__row inputfield">
+            </label>
+            <label class="order-form__item label-form">
+                <div class="label-form__title">Ваше телефон</div>
+                <input type="text" class="label-form__row inputfield">
+            </label>
+            <label class="order-form__item label-form">
+                <div class="label-form__title">Ваш email</div>
+                <input type="email" class="label-form__row inputfield">
+            </label>
+            <div class="order-form__item label-form">
+                <div class="label-form__title">
+                    Выберите услугу
+                </div>
+                <div class="label-form__row input-select" data-widget='dropdown'>
+                    <div class="input-select__heading" data-widget-partial="heading">Выберите услугу</div>
+                    <div class="input-select__wrap">
+                        <div class="input-select__body">
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Химчистка ковров" class="input-select__input">
+                                Химчистка ковров
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Матрас" class="input-select__input">
+                                Матрас
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Двухместный диван" class="input-select__input">
+                                Двухместный диван
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Трёхместный диван" class="input-select__input">
+                                Трёхместный диван
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Четырёхместный диван" class="input-select__input">
+                                Четырёхместный диван
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Пятиместный диван" class="input-select__input">
+                                Пятиместный диван
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Спальное место" class="input-select__input">
+                                Спальное место
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Кресло" class="input-select__input">
+                                Кресло
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Пуф" class="input-select__input">
+                                Пуф
+                            </label>
+
+                            <label class="input-select__item">
+                                <input type="radio" name="" value="Стул" class="input-select__input">
+                                Стул
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="order-form__button button button--medium">
+                Отправить заявку
+            </button>
+            <small class="order-form__small">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" class="icon">
+                    <use xlink:href="#info"></use>
+                </svg>
+                Нажимая кнопку - "Отправить заявку". вы соглашайтесь, с обработкой персональных данных
+            </small>
+        </form>
+
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        (function() {
+            let slider = document.querySelector('.clients-section__slider');
+            new Flickity(slider, {
+                contain: true,
+                cellAlign: 'left',
+                wrapAround: true,
+                autoPlay: 3000,
+                prevNextButtons: false
+            })
+        })();
+        (function() {
+            const options = {
+                contain: true,
+                cellAlign: 'left',
+                prevNextButtons: false,
+                groupCells: true,
+                watchCSS: true
+            };
+            let products = document.querySelector(".store-section__wrap");
+            new Flickity(products, options);
+
+            let photos = document.querySelector(".photo-section__wrap");
+            new Flickity(photos, options);
+        })();
+    </script>
+
+</body>
+
+</html>

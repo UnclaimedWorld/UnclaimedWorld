@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Завод Техмаш - Главная</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex a-c j-s">
+
+            <section class="d-flex a-c">
+                <a href="/" class="header__logo">
+                    <img src="img/logo-normal.png" alt="">
+                </a>
+                <ul class="header__links d-flex a-c">
+                    <li class="header__link"><a href="/">Главная</a></li>
+                    <li class="header__link"><a href="about-us.html">О нас</a></li>
+                    <li class="header__link"><a href="catalog.html">Продукция</a></li>
+                    <li class="header__link"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </section>
+
+            <section class="d-flex a-c header__wrap-nav">
+                <button onclick="contactForm.show()" class="header__button btn-outline">СВЯЗАТЬСЯ С НАМИ</button>
+                <div class="header__search search-top">
+                    <input type="search" class="search-top__input">
+                    <button class="search-top__button">
+                        <img src="img/icons/search.svg" alt="">
+                    </button>
+                </div>
+                <a href="#" class="header__link header__language">RU</a>
+                <a href="#" class="header__link header__language">UZ</a>
+            </section>
+
+        </div>
+    </header>
+    <header class="header-mobile">
+        <div class="container d-flex j-s a-c">
+            <a href="/" class="header-mobile__logo">
+                <img src="img/logo-normal.png" alt="">
+            </a>
+            <div class="burger aside-menu__trigger">
+                <div class="burger__item burger__item--0"></div>
+                <div class="burger__item burger__item--1"></div>
+                <div class="burger__item burger__item--2"></div>
+            </div>
+        </div>
+    </header>
+    <aside class="aside-menu hidden">
+        <div class="d-flex aside-menu__language">
+            <a href="#" class="aside-menu__link">RU</a>
+            <a href="#" class="aside-menu__link">UZ</a>
+        </div>
+        <div class="aside-menu__search search-top active">
+            <input type="search" class="search-top__input">
+            <button class="search-top__button">
+                <img src="img/icons/search.svg" alt="">
+            </button>
+        </div>
+        <ul class="aside-menu__links">
+            <li class="aside-menu__link"><a href="/">Главная</a></li>
+            <li class="aside-menu__link"><a href="about-us.html">О нас</a></li>
+            <li class="aside-menu__link"><a href="catalog.html">Продукция</a></li>
+            <li class="aside-menu__link"><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <button onclick="contactForm.show()" class="aside-menu__button btn-outline">СВЯЗАТЬСЯ С НАМИ</button>
+    </aside>
+
+    <div class="overlay hidden"></div>
+    <section class="page-heading" style="background-image: url(img/heading/catalog.jpg)">
+        <div class="container">
+            <h1 class="page-heading__title">Продукция</h1>
+            <nav class="crumbs-nav">
+
+                <a href="/" class="crumbs-nav__item">Главная</a>
+                /
+
+                <a href="#" class="crumbs-nav__item">Продукция</a>
+
+
+            </nav>
+        </div>
+    </section>
+
+    <section class="our-production product-block container">
+        <h3 class="product-block__small section-small">Завод Техмаш</h3>
+        <h2 class="product-block__heading section-heading">Наша продукция</h2>
+        <div class="product-block__products d-flex j-s">
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/product-1.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Водоводяные подогреватели ВВП</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/product-2.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Охладители выпара ова</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/product-9.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Пароводяные подогреватели МВН</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/product-8.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Пароводяные подогреватели ПП</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/product-6.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Подогреватели сетевой воды ПСВ</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/product-5.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Подогреватели мазута ПМ</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/product-7.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Подогреватели низкого давления ПНД</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/product-4.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Силосы и бункеры стальные</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="product-block container">
+        <h3 class="product-block__small section-small">Завод Техмаш</h3>
+        <h2 class="product-block__heading section-heading">Наши детали</h2>
+        <div class="product-block__products d-flex j-s">
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/detail-1.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Трубные системы ПП</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/detail-2.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Трубные системы ПСВ</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/detail-3.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Трубные системы ОВА</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+            <a href="subcatalog.html" class="product-item">
+                <div class="product-item__img">
+                    <img src="img/product/detail-4.jpg" alt="">
+                </div>
+                <div class="product-item__text">
+                    <h3 class="product-item__title">Трубные системы МВН</h3>
+                    <p class="product-item__description">Дискретность амбивалентно транспонирует гравитационный парадокс.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="catalog-text container">
+        <h3 class="catalog-text__heading">SEO Текст для каталога</h3>
+        <p class="catalog-text__paragraph">
+            Интеллект естественно понимает под собой интеллигибельный закон внешнего мира, открывая новые горизонты. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир, tertium nоn datur. Наряду с этим ощущение мира решительно контролирует непредвиденный гравитационный парадок
+        </p>
+        <p class="catalog-text__paragraph">
+            Наряду с этим ощущение мира решительно контролирует непредвиденный гравитационный парадокс. Апостериори, гравитационный парадокс амбивалентно понимает под собой интеллигибельный знак. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир, tertium nоn datur.
+        </p>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container d-flex j-s">
+            <section class="d-flex a-c footer__nav">
+                <a href="/" class="footer__logo"><img src="img/logo-white.png" alt=""></a>
+                <ul class="footer__links d-flex a-c">
+                    <li class="footer__link"><a href="/">Главная</a></li>
+                    <li class="footer__link"><a href="about-us.html">О нас</a></li>
+                    <li class="footer__link"><a href="catalog.html">Продукция</a></li>
+                    <li class="footer__link"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </section>
+            <section>
+                <div class="footer__social social d-flex a-c">
+                    <div class="social__title">Мы в соц.сети:</div>
+                    <a href="#" class="social__item"><svg x="0px" y="0px" viewBox="0 0 430.113 430.114">
+                            <path id="Facebook" d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805 c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354 c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z" />
+                        </svg></a>
+                    <a href="#" class="social__item"><svg x="0px" y="0px" viewBox="0 0 612 612">
+                            <path d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411 c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513 c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101 c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104 c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194 c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485 c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+                        </svg></a>
+                    <a href="#" class="social__item"><svg x="0px" y="0px" viewBox="0 0 512 512">
+                            <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160 C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48 h192c61.76,0,112,50.24,112,112V352z" />
+                            <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336 c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z" />
+                            <circle cx="393.6" cy="118.4" r="17.056" />
+                        </svg></a>
+                </div>
+                <div class="footer__copy">
+                    © 2009-2019. Завод ТехМаш. Все права защищены.
+                </div>
+            </section>
+        </div>
+        <div class="to-top hidden">
+            <img src="img/icons/arrow-up-white.svg" alt="" class="to-top__img">
+        </div>
+    </footer>
+    <article class="overlay-window contacts-feedback hidden">
+        <form class="overlay-window__content">
+            <div class="contacts-feedback__close" onclick="contactForm.hide()">
+                <img src="img/icons/close.svg" alt="">
+            </div>
+
+            <section class="contacts-feedback__heading">
+                <div class="section-title">Обратный звонок</div>
+            </section>
+
+            <section class="contacts-feedback__body">
+                <label class="contacts-feedback__row d-flex">
+                    <div class="contacts-feedback__col-label">Ваше имя</div>
+                    <div class="contacts-feedback__col-info">
+                        <input type="text" tabindex="1" class=" inputfield">
+                    </div>
+                </label>
+
+                <div class="contacts-feedback__row d-flex">
+                    <label for="window-terms" class="contacts-feedback__col-label">Ваш телефон</label>
+                    <div class="contacts-feedback__col-info">
+                        <input tabindex="2" type="tel" class=" inputfield" id="window-terms">
+                        <label class="d-flex contacts-feedback__label">
+                            <div tabindex="3" class="checkmark"><input type="checkbox" class="checkmark__input"></div>
+                            <div class="contacts-feedback__terms">
+                                Нажимая на кнопку Отправить, я соглашаюсь с <a href="#">политикой конфиденциальности</a>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts-feedback__footer d-flex a-c">
+                <div class="contacts-feedback__col-label"></div>
+                <div class="contacts-feedback__col-info">
+                    <button tabindex="4" class="contacts-feedback__button btn">Отправить</button>
+                </div>
+            </section>
+        </form>
+    </article>
+
+    <script src="libs/libs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

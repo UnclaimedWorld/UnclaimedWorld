@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<title>Shoprice - Система управления торговлей</title>
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="img/favicon.png">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="registration">
+    <div class="registration__aside container">
+      <div class="registration__info">
+        <a href="/" class="registration__logo">
+          <svg><use href="img/icons.svg#site-logo"></use></svg>
+        </a>
+        <ol class="registration__steps steps-list">
+            <li class="steps-list__item 
+              selected">
+              <span>Немного о вашей компании</span>
+            </li>
+            <li class="steps-list__item 
+              active">
+              <span>Контактные данные</span>
+            </li>
+            <li class="steps-list__item 
+              ">
+              <span>Завершение регистрации</span>
+            </li>
+        </ol>
+        <div class="registration__footer">
+          <a href="help.html" class="registration__link icon-link">
+            <svg class="icon-link__icon">
+              <use href="img/icons.svg#support"></use>
+            </svg>
+            Помощь
+          </a>
+          <a href="/" class="registration__link icon-link">
+            <svg class="icon-link__icon">
+              <use href="img/icons.svg#logout"></use>
+            </svg>
+            Выйти
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="registration__content container">
+      <div class="registration__info">
+        <h1 class="registration__heading heading-medium">Регистрация</h1>
+        
+<form class="registration__wrapper" action="registration-3.html">
+  <div class="registration__form-wrap">
+    <p class="registration__subtitle text-medium">Контактные данные</p>
+    <input type="text" placeholder="Адрес компании" class="registration__item input-item">
+    <input type="text" placeholder="Ориентир" class="registration__item input-item">
+    <p class="registration__tip text-tip">Люди будут находить быстрее</p>
+    <input type="text" placeholder="Ориентир" class="registration__item input-item">
+    <p class="registration__link-add link">
+      <svg class="link__icon"><use href="img/icons.svg#plus"></use></svg>
+      добавить еще номер
+    </p>
+    <p class="registration__subtitle registration__subtitle--block text-medium">Режим работы</p>
+    <div class="registration__switcher switcher-wrap">
+      <div class="switcher-title">24 / 7</div>
+      <input id="time-1" type="checkbox" hidden>
+      <label for="time-1" class="switcher"></label>
+    </div>
+    <div class="registration__day-wrap grid-row grid-row--wrap">
+      <div class="registration__day day-box" data-checker="main">
+        <div class="day-box__title" data-checker="toggle">
+          ПН
+        </div>
+
+        <div class="day-box__menu filter-menu" data-checker="menu">
+          <div class="filter-menu__checker round-radio-wrap">
+            <input id="day-type-1-weekend" name="day-type-1" type="radio" hidden>
+            <label for="day-type-1-weekend" class="round-radio">Выходной день</label>
+          </div>
+          <div class="filter-menu__checker round-radio-wrap">
+            <input type="radio" name="day-type-1" hidden id="day-type-1-work">
+            <label class="round-radio" for="day-type-1-work">Рабочий день</label>
+            <div class="filter-menu__settings round-radio-content">
+              <div class="grid-row grid-row--j-s">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+              </div>
+              <a href="#" class="link filter-menu__link">добавить перерыв</a>
+              <div class="grid-row">
+                <a href="#" class="link filter-menu__link-apply">применить на все дни</a>                      
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="registration__day day-box" data-checker="main">
+        <div class="day-box__title" data-checker="toggle">
+          ВТ
+        </div>
+
+        <div class="day-box__menu filter-menu" data-checker="menu">
+          <div class="filter-menu__checker round-radio-wrap">
+            <input id="day-type-2-weekend" name="day-type-2" type="radio" hidden>
+            <label for="day-type-2-weekend" class="round-radio">Выходной день</label>
+          </div>
+          <div class="filter-menu__checker round-radio-wrap">
+            <input type="radio" name="day-type-2" hidden id="day-type-2-work">
+            <label class="round-radio" for="day-type-2-work">Рабочий день</label>
+            <div class="filter-menu__settings round-radio-content">
+              <div class="grid-row grid-row--j-s">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+              </div>
+              <a href="#" class="link filter-menu__link">добавить перерыв</a>
+              <div class="grid-row">
+                <a href="#" class="link filter-menu__link-apply">применить на все дни</a>                      
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="registration__day day-box" data-checker="main">
+        <div class="day-box__title" data-checker="toggle">
+          СР
+        </div>
+
+        <div class="day-box__menu filter-menu" data-checker="menu">
+          <div class="filter-menu__checker round-radio-wrap">
+            <input id="day-type-3-weekend" name="day-type-3" type="radio" hidden>
+            <label for="day-type-3-weekend" class="round-radio">Выходной день</label>
+          </div>
+          <div class="filter-menu__checker round-radio-wrap">
+            <input type="radio" name="day-type-3" hidden id="day-type-3-work">
+            <label class="round-radio" for="day-type-3-work">Рабочий день</label>
+            <div class="filter-menu__settings round-radio-content">
+              <div class="grid-row grid-row--j-s">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+              </div>
+              <a href="#" class="link filter-menu__link">добавить перерыв</a>
+              <div class="grid-row">
+                <a href="#" class="link filter-menu__link-apply">применить на все дни</a>                      
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="registration__day day-box" data-checker="main">
+        <div class="day-box__title" data-checker="toggle">
+          ЧТ
+        </div>
+
+        <div class="day-box__menu filter-menu" data-checker="menu">
+          <div class="filter-menu__checker round-radio-wrap">
+            <input id="day-type-4-weekend" name="day-type-4" type="radio" hidden>
+            <label for="day-type-4-weekend" class="round-radio">Выходной день</label>
+          </div>
+          <div class="filter-menu__checker round-radio-wrap">
+            <input type="radio" name="day-type-4" hidden id="day-type-4-work">
+            <label class="round-radio" for="day-type-4-work">Рабочий день</label>
+            <div class="filter-menu__settings round-radio-content">
+              <div class="grid-row grid-row--j-s">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+              </div>
+              <a href="#" class="link filter-menu__link">добавить перерыв</a>
+              <div class="grid-row">
+                <a href="#" class="link filter-menu__link-apply">применить на все дни</a>                      
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="registration__day day-box" data-checker="main">
+        <div class="day-box__title" data-checker="toggle">
+          ПТ
+        </div>
+
+        <div class="day-box__menu filter-menu" data-checker="menu">
+          <div class="filter-menu__checker round-radio-wrap">
+            <input id="day-type-5-weekend" name="day-type-5" type="radio" hidden>
+            <label for="day-type-5-weekend" class="round-radio">Выходной день</label>
+          </div>
+          <div class="filter-menu__checker round-radio-wrap">
+            <input type="radio" name="day-type-5" hidden id="day-type-5-work">
+            <label class="round-radio" for="day-type-5-work">Рабочий день</label>
+            <div class="filter-menu__settings round-radio-content">
+              <div class="grid-row grid-row--j-s">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+              </div>
+              <a href="#" class="link filter-menu__link">добавить перерыв</a>
+              <div class="grid-row">
+                <a href="#" class="link filter-menu__link-apply">применить на все дни</a>                      
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="registration__day day-box" data-checker="main">
+        <div class="day-box__title" data-checker="toggle">
+          СБ
+        </div>
+
+        <div class="day-box__menu filter-menu" data-checker="menu">
+          <div class="filter-menu__checker round-radio-wrap">
+            <input id="day-type-6-weekend" name="day-type-6" type="radio" hidden>
+            <label for="day-type-6-weekend" class="round-radio">Выходной день</label>
+          </div>
+          <div class="filter-menu__checker round-radio-wrap">
+            <input type="radio" name="day-type-6" hidden id="day-type-6-work">
+            <label class="round-radio" for="day-type-6-work">Рабочий день</label>
+            <div class="filter-menu__settings round-radio-content">
+              <div class="grid-row grid-row--j-s">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+              </div>
+              <a href="#" class="link filter-menu__link">добавить перерыв</a>
+              <div class="grid-row">
+                <a href="#" class="link filter-menu__link-apply">применить на все дни</a>                      
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="registration__day day-box" data-checker="main">
+        <div class="day-box__title" data-checker="toggle">
+          ВС
+        </div>
+
+        <div class="day-box__menu filter-menu" data-checker="menu">
+          <div class="filter-menu__checker round-radio-wrap">
+            <input id="day-type-7-weekend" name="day-type-7" type="radio" hidden>
+            <label for="day-type-7-weekend" class="round-radio">Выходной день</label>
+          </div>
+          <div class="filter-menu__checker round-radio-wrap">
+            <input type="radio" name="day-type-7" hidden id="day-type-7-work">
+            <label class="round-radio" for="day-type-7-work">Рабочий день</label>
+            <div class="filter-menu__settings round-radio-content">
+              <div class="grid-row grid-row--j-s">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+                <input type="text" placeholder="00:00" class="filter-menu__input input-item input-item--medium">
+              </div>
+              <a href="#" class="link filter-menu__link">добавить перерыв</a>
+              <div class="grid-row">
+                <a href="#" class="link filter-menu__link-apply">применить на все дни</a>                      
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <button class="registration__button-next button">Далее</button>
+</form>
+
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

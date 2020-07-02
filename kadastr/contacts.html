@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<title>Template</title>
+<link rel="stylesheet" href="styles/libs.css">
+<link rel="stylesheet" href="styles/main.css">
+  
+</head>
+<body class="page ">
+  <header class="header container" data-activity-toggle="main">
+  <a href="/" class="header__logo logo">
+    <img src="img/main-logo.png" alt="" class="logo__img">
+    <span class="logo__title">ГОСУДАРСТВЕННЫЙ КОМИТЕТ РЕСПУБЛИКИ УЗБЕКИСТАН ПО ЗЕМЕЛЬНЫМ РЕСУРСАМ, ГЕОДЕЗИИ, КАРТОГРАФИИ И ГОСУДАРСТВЕННОМУ КАДАСТРУ</span>
+  </a>
+  <div class="header__wrap">
+    <div class="header__mobile-overlay dn" data-activity-toggle="toggle"></div>
+    <nav class="header__menu">
+      <a href="#" class="header__item active">Реестр сделок</a>
+      <a href="#" class="header__item">Контакты</a>
+    </nav>
+    <a href="tel: +998911234567" class="header__item-icon">
+      <svg><use href="img/icons.svg#phone-call"></use></svg>
+      <span>998 91 123 45 67</span>
+    </a>
+    <label class="header__dropdown dropdown-simple-wrap">
+      <select class="dropdown-simple">
+        <option value="ru">RU</option>
+        <option value="uz">UZ</option>
+        <option value="en">EN</option>
+      </select>
+    </label>
+    <button class="header__button button">
+      <svg class="button__icon"><use href="img/icons.svg#user"></use></svg>
+      <span>Войти</span>
+    </button>
+  </div>
+  <div class="header__mobile-menu dn" data-activity-toggle="toggle">
+    <img class="header__when-closed" src="img/icons/menu.svg" alt="">
+    <img class="header__when-opened" src="img/icons/close.svg" alt="">
+  </div>
+</header>
+  
+  <main class="contacts">
+    <div class="container">
+      <nav class="contacts__breadcrumbs breadcrumbs">
+        <a href="#" class="breadcrumbs__item">Главная</a>
+        <a href="#" class="breadcrumbs__item">Контакты</a>
+      </nav>
+      <h2 class="contacts__heading heading-section">
+        Наши контакты
+      </h2>
+      <div class="contacts__wrap">
+        <section class="contacts-aside">
+          <h3 class="contacts-aside__heading heading-extra-medium">Контакты</h3>
+          <div class="contacts-aside__item">
+            <h4 class="contacts-aside__title text-label">АДРЕС</h4>
+            <p class="contacts-aside__subtitle">
+              <a href="#">100011, Узбекистан, г. Ташкент, Шайхонтохурский  р., ул. Абдулла Кодирий, 78.</a>
+            </p>
+          </div>
+          <div class="contacts-aside__item">
+            <h4 class="contacts-aside__title text-label">ТЕлефон</h4>
+            <p class="contacts-aside__subtitle">
+              <a href="tel: +998712074070">+998 71 207 40 70</a>
+            </p>
+            <p class="contacts-aside__subtitle">
+              <a href="tel: +998712074080">+998 71 207 40 80</a>
+            </p>
+          </div>
+          <div class="contacts-aside__item">
+            <h4 class="contacts-aside__title text-label">EMAIL</h4>
+            <p class="contacts-aside__subtitle">
+              <a href="mailto: marketing@gmail.com">marketing@gmail.com</a>
+            </p>
+            <p class="contacts-aside__subtitle">
+              <a href="mailto: info@gmail.com">info@gmail.com</a>
+            </p>
+          </div>
+          <div class="contacts-aside__item">
+            <h4 class="contacts-aside__title text-label">МЫ В СОЦ. СЕТЯХ</h4>
+            <div class="contacts-aside__social social-wrap">
+              <a href="#" class="social social--facebook">
+                <img src="img/social/facebook-white.svg" alt="">
+              </a>
+              <a href="#" class="social social--twitter">
+                <img src="img/social/twitter-white.svg" alt="">
+              </a>
+              <a href="#" class="social social--instagram">
+                <img src="img/social/instagram-white.svg" alt="">
+              </a>
+              <a href="#" class="social social--telegram">
+                <img src="img/social/telegram-white.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </section>
+        <form class="contacts-form">
+          <h3 class="contacts-form__heading heading-extra-medium">Форма обратной связи</h3>
+          <div class="block-wrap-container">
+            <div class="block-wrap">
+              <div class="contacts-form__item contacts-form__item--large">
+                <h4 class="text-label form-label">ФИО</h4>
+                <input type="text" placeholder="Ваше ФИО" class="input-item input-control input-control--medium" data-focus>
+              </div>
+              <div class="contacts-form__item contacts-form__item--medium">
+                <h4 class="text-label form-label">Выберите отдел</h4>
+                <label class="contacts-form__input input-control input-control--medium dropdown-simple-wrap" data-focus>
+                  <select name="" id="" class="dropdown-simple dropdown-simple--light">
+                    <option>Выберите отдел</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                </label>
+              </div>
+              <div class="contacts-form__item">
+                <h4 class="text-label form-label">Телефон</h4>
+                <input type="text" placeholder="Номер" class="input-item input-control input-control--medium" data-focus>
+              </div>
+              <div class="contacts-form__item">
+                <h4 class="text-label form-label">EMAIL</h4>
+                <input type="text" placeholder="Ваш E-mail" class="input-item input-control input-control--medium" data-focus>
+              </div>
+              <div class="contacts-form__item contacts-form__item--large">
+                <h4 class="text-label form-label">Ваше сообщение</h4>
+                <textarea type="text" placeholder="Что вы хотите уточнить?" class="input-item input-control" data-focus></textarea>
+              </div>
+              
+            </div>
+          </div>
+          <div class="contacts-form__row">
+            <button class="contacts-form__button button">
+              Отправить сообщение
+            </button>
+            <p class="contacts-form__notice text-label">* - Все поля обязательны для заполнения</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="contacts__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3472875646685!2d69.25719431572558!3d41.323061007942776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE5JzIzLjAiTiA2OcKwMTUnMzMuOCJF!5e0!3m2!1sru!2s!4v1581962328379!5m2!1sru!2s"></iframe>
+    </div>
+  </main>
+
+  <footer class="footer container">
+  <a href="/" class="footer__logo logo">
+    <img src="img/main-logo.png" alt="" class="logo__img">
+    <span class="logo__title">ГОСУДАРСТВЕННЫЙ КОМИТЕТ РЕСПУБЛИКИ УЗБЕКИСТАН ПО ЗЕМЕЛЬНЫМ РЕСУРСАМ, ГЕОДЕЗИИ, КАРТОГРАФИИ И ГОСУДАРСТВЕННОМУ КАДАСТРУ</span>
+  </a>
+  <nav class="footer__col-nav">
+    <ul class="footer__menu-common">
+      <li class="footer__item-common">
+        <a href="#">Об аукцион</a>
+      </li>
+      <li class="footer__item-common">
+        <a href="#">Новости</a>
+      </li>
+      <li class="footer__item-common">
+        <a href="#">Вопросы и ответы</a>
+      </li>
+      <li class="footer__item-common">
+        <a href="#">Инструкции</a>
+      </li>
+    </ul>
+    <ul class="footer__menu-additional">
+      <li class="footer__link">
+        <a href="#">Политика конфиденциальности</a>
+      </li>
+      <li class="footer__link">
+        <a href="#">Обратная связь</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="footer__col-contacts">
+    <a href="tel: +998912345678" class="footer__contact">
+      +998 91 234 56 78
+    </a>
+    <div>
+      <a class="footer__contact-link" href="mailto: info@uzkadastr.uz">info@uzkadastr.uz</a>
+    </div>
+  </div>
+  <div class="footer__row">
+    <p class="footer__link">© 2020 Все права защищены.</p>
+    <a href="#" class="footer__developer">
+      <img src="img/genesis-logo.svg" alt="">
+    </a>
+  </div>
+</footer>
+  
+  <script src="scripts/libs.js"></script>
+  <script src="scripts/main.js"></script>
+  
+</body>
+</html>

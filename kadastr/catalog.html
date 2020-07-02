@@ -1,0 +1,909 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<title>Template</title>
+<link rel="stylesheet" href="styles/libs.css">
+<link rel="stylesheet" href="styles/main.css">
+  
+</head>
+<body class="page ">
+  <header class="header container" data-activity-toggle="main">
+  <a href="/" class="header__logo logo">
+    <img src="img/main-logo.png" alt="" class="logo__img">
+    <span class="logo__title">ГОСУДАРСТВЕННЫЙ КОМИТЕТ РЕСПУБЛИКИ УЗБЕКИСТАН ПО ЗЕМЕЛЬНЫМ РЕСУРСАМ, ГЕОДЕЗИИ, КАРТОГРАФИИ И ГОСУДАРСТВЕННОМУ КАДАСТРУ</span>
+  </a>
+  <div class="header__wrap">
+    <div class="header__mobile-overlay dn" data-activity-toggle="toggle"></div>
+    <nav class="header__menu">
+      <a href="#" class="header__item active">Реестр сделок</a>
+      <a href="#" class="header__item">Контакты</a>
+    </nav>
+    <a href="tel: +998911234567" class="header__item-icon">
+      <svg><use href="img/icons.svg#phone-call"></use></svg>
+      <span>998 91 123 45 67</span>
+    </a>
+    <label class="header__dropdown dropdown-simple-wrap">
+      <select class="dropdown-simple">
+        <option value="ru">RU</option>
+        <option value="uz">UZ</option>
+        <option value="en">EN</option>
+      </select>
+    </label>
+    <button class="header__button button">
+      <svg class="button__icon"><use href="img/icons.svg#user"></use></svg>
+      <span>Войти</span>
+    </button>
+  </div>
+  <div class="header__mobile-menu dn" data-activity-toggle="toggle">
+    <img class="header__when-closed" src="img/icons/menu.svg" alt="">
+    <img class="header__when-opened" src="img/icons/close.svg" alt="">
+  </div>
+</header>
+  
+  <main class="catalog">
+    <div class="container">
+      <nav class="catalog__breadcrumbs breadcrumbs">
+        <a href="#" class="breadcrumbs__item">Главная</a>
+        <a href="#" class="breadcrumbs__item">Реестр сделок</a>
+      </nav>
+      <h2 class="catalog__heading heading-section">
+        Реестр сделок
+      </h2>
+      <form class="catalog-filter">
+        <div class="catalog-filter__row">
+          <div class="block-wrap">
+            <input type="text" placeholder="№ лота" 
+              class="catalog-filter__input input-control input-item" data-focus>
+            <input type="text" 
+              placeholder="Город, адрес , метро, район, ж/д, шоссе…" 
+              class="catalog-filter__input catalog-filter__input--large input-control input-item" data-focus>
+            <label class="catalog-filter__input input-control dropdown-simple-wrap" data-focus>
+              <select class="dropdown-simple">
+                <option>Наименование области</option>
+                <option value="">Ташкентская область</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </label>
+            <label class="catalog-filter__input input-control dropdown-simple-wrap" data-focus>
+              <select name="" id="" class="dropdown-simple">
+                <option>Наименование района</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </label>
+            <div class="catalog-filter__double double-input">
+              <p class="text-medium double-input__title">
+                Площадь участка:
+              </p>
+              <div class="input-control" data-focus>
+                <input type="text" placeholder="от" class="input-control__item input-item">
+                <input type="text" placeholder="до" class="input-control__item input-item">
+              </div>
+              <p class="text-medium">Га</p>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-filter__wrap-buttons">
+          <div class="block-wrap">
+            <button class="catalog-filter__button button button--medium">
+              <span class="dn-ml">Показать результат</span>
+              <span class="dn db-ml">Результат</span>
+            </button>
+            <button class="catalog-filter__button button button--outline button--medium">
+              <span class="dn-ml">Показать на карте</span>
+              <span class="dn db-ml">На карте</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <section class="other-lots other-lots--catalog container">
+      <div class="other-lots__header grid-row grid-row--j-s grid-row--a-c">
+        <h2 class="other-lots__heading heading-section">Последние аукционы</h2>
+        <a href="#" class="other-lots__link icon-link">
+          <svg class="icon-link__icon">
+            <use href="img/icons.svg#map"></use>
+          </svg>
+          <span class="icon-link__title">Показать на карте</span>
+        </a>
+      </div>
+      <div class="other-lots__block">
+        <div class="block-wrap">
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (1).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Продажа участка 40 Га </h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">180 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (2).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Участок рядом с метро!</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">900 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (3).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Продажа участка 60 Га </h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">64 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (4).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Продажа участка 80 Га </h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">120 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (1).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Уникальное расположение</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">380 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (2).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Участок недалеко от ТТЗ</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">570 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (3).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Участок рядом с ТКАДом</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">665 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (4).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Участок рядом от метро</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">90 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (1).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Продажа участка 40 Га </h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">180 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (2).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Участок рядом с метро!</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">900 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (3).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Продажа участка 60 Га </h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">64 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (4).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Продажа участка 80 Га </h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">120 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (1).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Уникальное расположение</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">380 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (2).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Участок недалеко от ТТЗ</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">570 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (3).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Участок рядом с ТКАДом</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">665 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other-lots__item lot-item">
+            <a href="#" class="cover-link"></a>
+            <img src="img/cards/card (4).png" alt="" class="lot-item__cover">
+            <h4 class="lot-item__heading heading-medium">Участок рядом от метро</h4>
+            <div class="lot-item__content">
+              <div class="lot-item__info large">
+                <p class="lot-item__title text-small color-light">Район</p>
+                <p class="lot-item__subtitle text-medium">Ташкентская область, город Ташкент</p>
+              </div>
+              <div class="lot-item__info ">
+                <p class="lot-item__title text-small color-light">Площадь участка</p>
+                <p class="lot-item__subtitle text-medium">234 Га</p>
+              </div>
+              <div class="lot-item__info small">
+                <p class="lot-item__title text-small color-light">ID</p>
+                <p class="lot-item__subtitle text-medium">№302495</p>
+              </div>
+            </div>
+            <div class="lot-item__value text-large">90 000 000 UZS</div>
+            <div class="lot-item__footer">
+              <p class="lot-item__notice text-small">
+                <span class="dn-ds">До конца Аукциона осталось</span>
+                <span class="dn db-ds">До конца аукциона осталось</span>
+              </p>
+              <div class="lot-item__timer timer-inpage">
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">01</div>
+                  <div class="timer-inpage__title">ДНЕЙ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">12</div>
+                  <div class="timer-inpage__title">ЧАСОВ</div>
+                </div>
+                <div class="timer-inpage__item">
+                  <div class="timer-inpage__time">30</div>
+                  <div class="timer-inpage__title">МИНУТ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-row grid-row--j-c">
+        <ul class="other-lots__pagination pagination">
+          <li>
+            <button class="pagination__item pagination__button previous" disabled>
+              <svg><use href="img/icons.svg#chevron"></use></svg>
+            </button>
+          </li>
+          <li>
+            <a href="#"  class="pagination__item active">
+              1              
+            </a>
+          </li>
+          <li>
+            <a href="#"  class="pagination__item ">
+              2              
+            </a>
+          </li>
+          <li>
+            <a href="#"  class="pagination__item ">
+              3              
+            </a>
+          </li>
+          <li>
+            <a href="#"  class="pagination__item ">
+              4              
+            </a>
+          </li>
+          <li>
+            <a href="#"  class="pagination__item ">
+              5              
+            </a>
+          </li>
+          <li>
+            <button class="pagination__button pagination__item">
+              <svg><use href="img/icons.svg#chevron"></use></svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <article class="main-news container">
+    <div class="main-news__header grid-row grid-row--j-s grid-row--a-c">
+      <h2 class="main-news__heading heading-section">Последние новости</h2>
+      <a href="#" class="main-news__link text-link">Посмотреть все</a>
+    </div>
+    <div class="main-news__block block-wrap-container">
+      <div class="block-wrap slider-mob">
+        <div class="main-news__item">
+          <div class="news-item">
+            <img src="img/news/news (1).jpg" alt="" class="news-item__cover">
+            <h4 class="news-item__title">С 2021 года план по продаже зерна государству будет полностью отменен - Мирзиёев</h4>
+            <p class="news-item__subtitle">14.02.2020</p>
+            <a href="#" class="news-item__link">
+              Читать дальше
+              <svg><use href="img/icons.svg#chevron"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="main-news__item">
+          <div class="news-item">
+            <img src="img/news/news (2).jpg" alt="" class="news-item__cover">
+            <h4 class="news-item__title">Ravon Nexia R3 стала самой продаваемой моделью в Казахстане</h4>
+            <p class="news-item__subtitle">10.02.2020</p>
+            <a href="#" class="news-item__link">
+              Читать дальше
+              <svg><use href="img/icons.svg#chevron"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="main-news__item">
+          <div class="news-item">
+            <img src="img/news/news (3).jpg" alt="" class="news-item__cover">
+            <h4 class="news-item__title">Деловые люди Бухары ознакомились с бизнес-структурой турецких компаний</h4>
+            <p class="news-item__subtitle">04.02.2020</p>
+            <a href="#" class="news-item__link">
+              Читать дальше
+              <svg><use href="img/icons.svg#chevron"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="main-news__item">
+          <div class="news-item">
+            <img src="img/news/news (4).jpg" alt="" class="news-item__cover">
+            <h4 class="news-item__title">Что будет с сельским хозяйством Узбекистана при вступлении в ЕАЭС — мнение</h4>
+            <p class="news-item__subtitle">01.02.2020</p>
+            <a href="#" class="news-item__link">
+              Читать дальше
+              <svg><use href="img/icons.svg#chevron"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer container">
+  <a href="/" class="footer__logo logo">
+    <img src="img/main-logo.png" alt="" class="logo__img">
+    <span class="logo__title">ГОСУДАРСТВЕННЫЙ КОМИТЕТ РЕСПУБЛИКИ УЗБЕКИСТАН ПО ЗЕМЕЛЬНЫМ РЕСУРСАМ, ГЕОДЕЗИИ, КАРТОГРАФИИ И ГОСУДАРСТВЕННОМУ КАДАСТРУ</span>
+  </a>
+  <nav class="footer__col-nav">
+    <ul class="footer__menu-common">
+      <li class="footer__item-common">
+        <a href="#">Об аукцион</a>
+      </li>
+      <li class="footer__item-common">
+        <a href="#">Новости</a>
+      </li>
+      <li class="footer__item-common">
+        <a href="#">Вопросы и ответы</a>
+      </li>
+      <li class="footer__item-common">
+        <a href="#">Инструкции</a>
+      </li>
+    </ul>
+    <ul class="footer__menu-additional">
+      <li class="footer__link">
+        <a href="#">Политика конфиденциальности</a>
+      </li>
+      <li class="footer__link">
+        <a href="#">Обратная связь</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="footer__col-contacts">
+    <a href="tel: +998912345678" class="footer__contact">
+      +998 91 234 56 78
+    </a>
+    <div>
+      <a class="footer__contact-link" href="mailto: info@uzkadastr.uz">info@uzkadastr.uz</a>
+    </div>
+  </div>
+  <div class="footer__row">
+    <p class="footer__link">© 2020 Все права защищены.</p>
+    <a href="#" class="footer__developer">
+      <img src="img/genesis-logo.svg" alt="">
+    </a>
+  </div>
+</footer>
+  
+  <script src="scripts/libs.js"></script>
+  <script src="scripts/main.js"></script>
+  
+  <script>
+    mobileSlider();
+  </script>
+
+</body>
+</html>

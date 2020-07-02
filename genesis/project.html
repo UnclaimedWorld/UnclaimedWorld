@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<title>blank</title>
+<link rel="stylesheet" href="styles/main.css"> 
+  
+</head>
+<body class="page ">
+  <header class="header">
+  <div class="header__container container">
+    <a href="index.html" class="header__logo logo">
+      <img src="img/site-logo.svg" alt="site logo">
+    </a>
+    <nav class="header__menu">
+      <a href="index.html" class="header__item hover-under
+        ">
+        ГЛАВНАЯ
+      </a>
+      <a href="about.html" class="header__item hover-under
+        ">
+        О КОМПАНИИ
+      </a>
+      <a href="services.html" class="header__item hover-under
+        ">
+        УСЛУГИ
+      </a>
+      <a href="vacancies.html" class="header__item hover-under
+        ">
+        ВАКАНСИИ
+      </a>
+      <a href="portfolio.html" class="header__item hover-under
+        ">
+        ПОРТФОЛИО
+      </a>
+      <a href="products.html" class="header__item hover-under
+        ">
+        ПРОДУКТЫ
+      </a>
+      <a href="contacts.html" class="header__item hover-under
+        ">
+        КОНТАКТЫ
+      </a>
+    </nav>
+    <div class="header__wrap">
+      <a href="contacts.html" class="header__contact-button button t-transparent">
+        Оставить заявку
+      </a>
+      <div class="header__button menu-button-wrap" data-modal-close data-modal='header-menu'>
+        <div class="menu-button-wrap__title when-closed header__item fw-bold">МЕНЮ</div>
+        <div class="menu-button-wrap__title when-opened header__item fw-bold">ЗАКРЫТЬ</div>
+        <button class="header__menu-button menu-button">
+          <svg class="when-closed"><use href="#menu"></use></svg>
+          <svg class="when-opened"><use href="#close"></use></svg>
+        </button>
+      </div>
+    </div>
+    <ul class="header__fading-menu language-wrap">
+      <li class="language-title"><a href="#" class="hover-under">Уз</a></li>
+      <li class="language-title active"><a href="#" class="active hover-under">Ру</a></li>
+      <li class="language-title"><a href="#" class="hover-under">En</a></li>
+    </ul>
+  </div>
+</header>
+<div class="modal header-menu hidden" id="header-menu">
+  <div class="modal__strips container strips-section strips-section--menu">
+    <div class="strips-section__strips"></div>
+    <div class="strips-section__strips strips-section__strips--single"></div>
+  </div>
+  <div class="modal__scroll">
+    <div class="modal__content header-menu__content container">
+      <div class="header-menu__block">
+        <nav class="header-menu__col">
+          <a href="index.html" class="header-menu__item heading-person fw-bold hover-text">
+            Главная
+          </a>
+          <a href="about.html" class="header-menu__item heading-person fw-bold hover-text">
+            О нас
+          </a>
+          <a href="services.html" class="header-menu__item heading-person fw-bold hover-text">
+            Услуги
+          </a>
+          <a href="portfolio.html" class="header-menu__item heading-person fw-bold hover-text">
+            Портфолио
+          </a>
+        </nav>
+        <nav class="header-menu__col">
+          <a href="news.html" class="header-menu__item heading-person fw-bold hover-text">
+            Новости
+          </a>
+          <a href="products.html" class="header-menu__item heading-person fw-bold hover-text">
+            Продукты
+          </a>
+          <a href="vacancies.html" class="header-menu__item heading-person fw-bold hover-text">
+            Вакансии
+          </a>
+          <a href="contacts.html" class="header-menu__item heading-person fw-bold hover-text">
+            Контакты
+          </a>
+        </nav>
+        <div class="header-menu__col header-menu__col--social">
+          <div class="header-menu__address address-info">
+            <h4 class="address-info__subtitle subtitle-footer fw-normal">Звонок бесплатный</h4>
+            <address class="address-info__title heading-person fw-bold">
+              <a href="tel: +998712021118">71 202 11 18</a>
+            </address>
+          </div>
+          <div class="header-menu__address address-info">
+            <h4 class="address-info__subtitle subtitle-footer fw-normal">Поддержка</h4>
+            <address class="address-info__title heading-person fw-bold">
+              <a href="mailto: info@igenius.uz">info@igenius.uz</a>
+            </address>
+          </div>
+          <div class="header-menu__address address-info">
+            <h4 class="address-info__subtitle subtitle-footer fw-normal">Поддержка</h4>
+            <div class="address-info__title social">
+              <a href="#" class="social__item">
+                <svg><use href="#facebook"></use></svg>
+              </a>
+              <a href="#" class="social__item">
+                <svg><use href="#telegram"></use></svg>
+              </a>
+              <a href="#" class="social__item">
+                <svg><use href="#instagram"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="header-menu__address">
+            <button class="header-menu__button button t-transparent" data-modal="modal-vacancy">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu__row stroke-address">
+        <svg class="stroke-address__icon"><use href="#short-site-logo"></use></svg>
+        <div class="stroke-address__description subtitle-footer fw-normal">
+          <b>Офис в ташкенте</b>
+          <span class="font-half-trans">100011</span>
+          <address>
+            <a href="https://g.page/Uzcard24?share">
+              Шайхантахурский район, ул. Абдулла Кодирий, 78
+            </a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   
+  <div class="section-article background-darken">
+    <div class="section-article__container container strips-section strips-section--news">
+      <div class="strips-section__strips"></div>
+      <div class="section-article__aside section-article__aside--social">
+        <div class="section-article__social social-wrap social-wrap--vertical">
+          <div class="social-wrap__title subtitle-footer">Поделиться</div>
+          <div class="social">
+            <a href="#" class="social__item">
+              <svg><use href="#facebook"></use></svg>
+            </a>
+            <a href="#" class="social__item">
+              <svg><use href="#telegram"></use></svg>
+            </a>
+            <a href="#" class="social__item">
+              <svg><use href="#instagram"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <main class="section-article__content article">
+        <img src="img/covers/news-large-1.png" alt="Оказывается, постоянный количественный рост так же органично вписывается в наши планы" class="article__cover">
+        <h1 class="article__heading heading-banner fw-bold">Онлайн банк</h1>
+        <div class="article__content description-project">
+          <p>
+            Господа, начало повседневной работы по формированию позиции предполагает независимые способы реализации стандартных подходов! Повседневная практика показывает, что перспективное планирование предполагает независимые способы реализации вывода текущих активов. Господа, повышение уровня гражданского сознания обеспечивает актуальность экономической целесообразности принимаемых решений. Приятно, граждане, наблюдать, как акционеры крупнейших компаний в равной степени предоставлены сами себе.
+          </p>
+          <p>
+            С учётом сложившейся международной обстановки, социально-экономическое развитие представляет собой интересный эксперимент проверки форм воздействия. Равным образом, дальнейшее развитие различных форм деятельности не оставляет шанса для первоочередных требований. Значимость этих проблем настолько очевидна, что сплочённость команды профессионалов создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса кластеризации усилий. Но выбранный нами инновационный путь предполагает независимые способы реализации экономической целесообразности принимаемых решений. Прежде всего, граница обучения кадров играет определяющее значение для экономической целесообразности принимаемых решений!
+          </p>
+          <p>
+            В рамках спецификации современных стандартов, независимые государства будут функционально разнесены на независимые элементы. Равным образом, реализация намеченных плановых заданий не даёт нам иного выбора, кроме определения распределения внутренних резервов и ресурсов. Банальные, но неопровержимые выводы, а также интерактивные прототипы представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть указаны как претенденты на роль ключевых факторов. Банальные, но неопровержимые выводы, а также независимые государства освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, объявлены нарушающими общечеловеческие нормы этики и морали.
+          </p>
+        </div>
+      </main>
+      <aside class="section-article__aside short-news-wrap">
+        <h3 class="short-news-wrap__heading subtitle-article-link fw-medium">Последние новости</h3>
+        <div class="short-news-wrap__content">
+          <div class="short-news">
+            <a href="article.html" class="cover-link"></a>
+            <h4 class="short-news__heading subtitle-article-link fw-bold">Курс ценных бумаг не стал ограничивающим фактором</h4>
+          </div>
+          <div class="short-news">
+            <a href="article.html" class="cover-link"></a>
+            <h4 class="short-news__heading subtitle-article-link fw-bold">Курс ценных бумаг не стал ограничивающим фактором</h4>
+          </div>
+          <div class="short-news">
+            <a href="article.html" class="cover-link"></a>
+            <h4 class="short-news__heading subtitle-article-link fw-bold">Курс ценных бумаг не стал ограничивающим фактором</h4>
+          </div>
+          <div class="short-news">
+            <a href="article.html" class="cover-link"></a>
+            <h4 class="short-news__heading subtitle-article-link fw-bold">Курс ценных бумаг не стал ограничивающим фактором</h4>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  
+  <footer class="footer">
+  <div class="footer__container container">
+    <nav class="footer__col footer__col--list">
+      <ul class="footer__nav nav-footer">
+        <li class="nav-footer__item subtitle-person">
+          <a href="index.html" class="hover-text">ГЛАВНАЯ</a>
+        </li>
+        <li class="nav-footer__item subtitle-person">
+          <a href="about.html" class="hover-text">О КОМПАНИИ</a>
+        </li>
+        <li class="nav-footer__item subtitle-person">
+          <a href="services.html" class="hover-text">УСЛУГИ</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer__col footer__col--list">
+      <ul class="footer__nav nav-footer">
+        <li class="nav-footer__item subtitle-person">
+          <a href="portfolio.html" class="hover-text">ПОРТФОЛИО</a>
+        </li>
+        <li class="nav-footer__item subtitle-person">
+          <a href="news.html" class="hover-text">НОВОСТИ</a>
+        </li>
+        <li class="nav-footer__item subtitle-person">
+          <a href="contacts.html" class="hover-text">КОНТАКТЫ</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer__col footer__col--list">
+      <ul class="footer__nav nav-footer">
+        <li class="nav-footer__item subtitle-person">
+          <a href="vacancies.html" class="hover-text">ВАКАНСИИ</a>
+        </li>
+        <li class="nav-footer__item subtitle-person">
+          <a href="policy.html" class="hover-text">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+        </li>
+        <li class="nav-footer__item subtitle-person">
+          <a href="products.html" class="hover-text">ПРОДУКТЫ</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__col footer__right-aligned">
+      <div class="footer__contact-wrap">
+        <div class="footer__contact address-info">
+          <h4 class="address-info__subtitle subtitle-footer fw-normal">Звонок бесплатный</h4>
+          <address class="address-info__title heading-person fw-bold">
+            <a href="tel: +998712021118">71 202 11 18</a>
+          </address>
+        </div>
+        <div class="footer__contact address-info">
+          <h4 class="address-info__subtitle subtitle-footer fw-normal">Поддержка</h4>
+          <address class="address-info__title heading-person fw-bold">
+            <a href="mailto: info@igenius.uz">info@igenius.uz</a>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="footer__col footer__col--large">
+      <div class="footer__wrap stroke-address">
+        <svg class="stroke-address__icon"><use href="#short-site-logo"></use></svg>
+        <div class="stroke-address__description subtitle-footer fw-normal">
+          <b>Офис в ташкенте</b>
+          <span class="font-half-trans">100011</span>
+          <address>
+            <a href="https://g.page/Uzcard24?share">
+              Шайхантахурский район, ул. Абдулла Кодирий, 78
+            </a>
+          </address>
+        </div>
+      </div>
+      <div class="footer__wrap-social df df-a-c">
+        <div class="footer__social social">
+          <a href="#" class="social__item">
+            <svg><use href="#facebook"></use></svg>
+          </a>
+          <a href="#" class="social__item">
+            <svg><use href="#telegram"></use></svg>
+          </a>
+          <a href="#" class="social__item">
+            <svg><use href="#instagram"></use></svg>
+          </a>
+        </div>
+        <button class="footer__contact-button button" data-modal="modal-feedback">Сделать заказ</button>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+  <button class="fixed-button" data-modal="modal-feedback">
+    <svg><use href="phone"></use></svg>
+  </button>
+  <article class="modal modal-form hidden" id="modal-feedback">
+  <div class="modal__strips container strips-section strips-section--menu">
+    <div class="strips-section__strips"></div>
+    <div class="strips-section__strips strips-section__strips--single"></div>
+  </div>
+  <div class="modal__scroll">
+    <div class="modal__content container modal-form__content">
+      <form class="modal-form__form modal-form__center feedback-form">
+        <h2 class="feedback-form__heading heading-person fw-bold">Обратная связь</h2>
+        <label class="feedback-form__item inputfield">
+          <p class="inputfield__label subtitle-feature fw-normal">Ваше имя</p>
+          <input type="text" class="inputfield__place">
+        </label>
+        <label class="feedback-form__item inputfield">
+          <p class="inputfield__label subtitle-feature fw-normal">Номер телефона</p>
+          <input type="tel" class="inputfield__place">
+        </label>
+        <label class="feedback-form__item inputfield">
+          <p class="inputfield__label subtitle-feature fw-normal">Название фирмы</p>
+          <input type="text" class="inputfield__place">
+        </label>
+        <label class="feedback-form__item inputfield">
+          <p class="inputfield__label subtitle-feature fw-normal">Электронная почта</p>
+          <input type="text" class="inputfield__place">
+        </label>
+        <label class="feedback-form__item inputfield">
+          <p class="inputfield__label subtitle-feature fw-normal">Ваше сообщение</p>
+          <textarea class="inputfield__place"></textarea>
+        </label>
+        <button class="feedback-form__button button">Отправить</button>
+        <p class="feedback-form__terms subtitle-feature fw-normal">Нажимая отправить, вы соглашаетесь с <a href="#">условиями пользования</a> нашего сайта</p>
+      </form>
+    </div>
+  </div>
+</article>
+  <script src="scripts/main.js"></script>
+  
+  <script>
+    function mobileSlider() {
+      var slider = document.querySelector(".short-news-wrap__content");
+      var flkty = new Flickity(slider, {
+        contain: true,
+        prevNextButtons: false,
+        pageDots: false,
+        cellAlign: "left",
+        watchCSS: true
+      });
+    }
+    mobileSlider();
+  </script>
+
+  <div hidden><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 14 18" id="arrow-narrow"><path d="M11.827 9.817h0l-6.02 6.02s0 0 0 0a1.155 1.155 0 11-1.634-1.634L9.376 9 4.173 3.797h0a1.156 1.156 0 010-1.634l7.654 7.654zm0 0a1.152 1.152 0 000-1.634h0m0 1.634V8.183m0 0l-6.02-6.02s0 0 0 0a1.155 1.155 0 00-1.634 0l7.654 6.02z" fill="inherit" stroke="inherit" stroke-width=".35"/></symbol><symbol viewBox="0 0 20 17" id="close"><rect x="3.414" y="1" width="20" height="2" rx="1" transform="rotate(45 3.414 1)"/><rect x="2.414" y="15.142" width="20" height="2" rx="1" transform="rotate(-45 2.414 15.142)"/></symbol><symbol viewBox="0 0 20 20" fill="none" id="comment"><path d="M2.5 10.833c0-3.287 0-4.93.908-6.037a4 4 0 01.554-.555c1.107-.908 2.75-.908 6.038-.908h1.25c2.099 0 3.148 0 3.96.384a4 4 0 011.906 1.906c.384.812.384 1.861.384 3.96v0c0 2.1 0 3.149-.384 3.96a4 4 0 01-1.906 1.906c-.812.384-1.861.384-3.96.384H7.752c-.257 0-.386 0-.51.008a4 4 0 00-2.4.994c-.092.082-.183.173-.365.355v0c-.224.224-.336.335-.413.388a1 1 0 01-1.547-.64c-.017-.092-.017-.25-.017-.567v-5.538z" stroke="inherit" stroke-width="1.8" stroke-linejoin="round"/><circle cx="6.25" cy="9.583" r=".75" stroke="inherit"/><circle cx="10" cy="9.583" r=".75" stroke="inherit"/><circle cx="13.75" cy="9.583" r=".75" stroke="inherit"/></symbol><symbol viewBox="0 0 50 50" fill="none" id="cup"><path d="M41.266 25.587a7.027 7.027 0 000-14.053h-1.514v-.866c0-2.377-3.664-3.244-6.086-3.707a76.3 76.3 0 00-24.136 0c-2.426.464-6.086 1.332-6.086 3.707v10.2a18.1 18.1 0 005.28 12.79C5.846 34.236 1 35.47 1 38.402c0 5.218 15.667 5.883 20.877 5.883 5.21 0 20.877-.666 20.877-5.883 0-3.03-5.194-4.27-8.195-4.837a18.157 18.157 0 004.569-7.979h2.138zm0-11.092a4.065 4.065 0 010 8.13h-1.514v-8.13h1.514zm-5.172-3.826c-5.719 2.29-23.4 2.24-28.993 0 5.591-2.24 23.276-2.29 28.993 0zm3.586 27.734c-.446.392-1.874 1.168-5.236 1.843-10.736 2.158-27.357.8-30.369-1.843 1.376-1.21 5.77-1.986 7.714-2.262a18.11 18.11 0 0019.711-.064c1.935.26 6.716 1.04 8.18 2.327zm-18.08-2.34A15.21 15.21 0 016.4 20.868v-7.3c6.627 2.356 23.792 2.345 30.386 0v7.3A15.21 15.21 0 0121.6 36.063z" fill="#FF9873"/><path d="M39.5 24a24.14 24.14 0 01.252-1.376V10.668c0-2.378-3.664-3.245-6.086-3.708a76.3 76.3 0 00-24.136 0c-2.426.464-6.086 1.332-6.086 3.708v10.2a18.1 18.1 0 005.28 12.79C5.846 34.235 1 35.47 1 38.402c0 5.217 15.667 5.882 20.877 5.882 5.21 0 20.877-.665 20.877-5.882 0-3.03-5.194-4.27-8.195-4.837a18.157 18.157 0 004.569-7.979s.28-.846.372-1.587zm.252-8.5v7.125-8.13V15.5zm-3.658-4.832c-5.719 2.29-23.4 2.241-28.993 0 5.591-2.239 23.276-2.29 28.993 0zm3.586 27.735c-.446.392-1.874 1.167-5.236 1.843-10.736 2.158-27.357.8-30.369-1.843 1.376-1.21 5.77-1.987 7.714-2.263a18.11 18.11 0 0019.711-.064c1.935.26 6.716 1.04 8.18 2.327zm-18.08-2.34A15.21 15.21 0 016.4 20.868v-7.3c6.627 2.356 23.792 2.345 30.386 0v7.3A15.21 15.21 0 0121.6 36.062z" fill="#fff"/></symbol><symbol viewBox="0 0 24 30" id="facebook"><path d="M16.623 3.755l-2.398-.005c-2.695 0-4.436 2.294-4.436 5.845v2.695H7.377c-.208 0-.377.217-.377.484v3.905c0 .268.169.484.377.484H9.79v9.853c0 .267.169.484.377.484h3.146c.209 0 .378-.217.378-.484v-9.853h2.82c.208 0 .377-.216.377-.484v-3.905a.562.562 0 00-.11-.342.34.34 0 00-.267-.142h-2.82v-2.285c0-1.098.203-1.655 1.317-1.655h1.616c.208 0 .377-.218.377-.485V4.239c0-.267-.169-.484-.377-.484z"/></symbol><symbol viewBox="0 0 16 16" id="forward"><path d="M15.804 7.196L9.808 1.199a.667.667 0 00-1.138.471v2.668c-3.833.157-7.178 2.746-8.25 6.455-.463 1.608-.427 2.915-.414 3.407l.003.13a.666.666 0 001.238.34c2.64-4.435 6.136-4.561 7.423-4.436v3.43a.666.666 0 001.138.47l5.996-5.996a.666.666 0 000-.942z"/></symbol><symbol viewBox="0 0 30 30" id="instagram"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.375 14.275c0-4.125 0-6.187 1.05-7.633a5.5 5.5 0 011.217-1.217c1.446-1.05 3.508-1.05 7.633-1.05h1.45c4.125 0 6.187 0 7.633 1.05a5.5 5.5 0 011.217 1.217c1.05 1.446 1.05 3.508 1.05 7.633v1.45c0 4.125 0 6.187-1.05 7.633a5.5 5.5 0 01-1.217 1.217c-1.446 1.05-3.508 1.05-7.633 1.05h-1.45c-4.125 0-6.187 0-7.633-1.05a5.5 5.5 0 01-1.217-1.217c-1.05-1.446-1.05-3.508-1.05-7.633v-1.45zM15 9.375a5.625 5.625 0 100 11.25 5.625 5.625 0 000-11.25zm0 9.14A3.52 3.52 0 0111.484 15 3.52 3.52 0 0115 11.484 3.52 3.52 0 0118.516 15 3.52 3.52 0 0115 18.516zm6.796-9.562a.75.75 0 11-1.499 0 .75.75 0 011.5 0z"/></symbol><symbol viewBox="0 0 20 17" id="menu"><rect width="20" height="2" rx="1"/><rect y="15" width="20" height="2" rx="1"/><rect x="4" y="7" width="15" height="2" rx="1"/></symbol><symbol viewBox="0 0 50 50" fill="none" id="people"><path d="M24.683 25.638a9.319 9.319 0 10-9.319-9.319 9.329 9.329 0 009.32 9.319zm0-15.586a6.267 6.267 0 11-6.267 6.267 6.274 6.274 0 016.267-6.267zm-14.7 18.651a5.867 5.867 0 10-5.867-5.867 5.874 5.874 0 005.867 5.867zm0-8.684a2.816 2.816 0 110 5.632 2.816 2.816 0 010-5.632zm29.326 8.684a5.867 5.867 0 10-5.866-5.867 5.875 5.875 0 005.867 5.867zm0-8.684a2.816 2.816 0 110 5.632 2.816 2.816 0 010-5.632zm8.983 14.32v2.516a1.526 1.526 0 01-3.05 0v-2.516a.667.667 0 00-.395-.609l-2.614-1.167h-4.944a5.466 5.466 0 012.233 4.4v4.517a1.526 1.526 0 01-3.051 0v-4.513a2.412 2.412 0 00-1.427-2.2l-4.927-2.2h-.431a5.632 5.632 0 01-10.076 0h-.43l-4.928 2.2a2.412 2.412 0 00-1.427 2.2v4.517a1.526 1.526 0 01-3.05 0v-4.517A5.467 5.467 0 0112 32.563H7.06L4.447 33.73a.667.667 0 00-.396.609v2.516a1.526 1.526 0 11-3.05 0v-2.516a3.722 3.722 0 012.2-3.395c3.177-1.418 3.1-1.432 3.533-1.432 6.992 0 6.668-.05 7.078.133l2.213.988 2.205-.985c.381-.171.477-.133 2.434-.133a1.527 1.527 0 011.481 1.161 2.577 2.577 0 005 0 1.527 1.527 0 011.482-1.161h1.814c.43 0 .449.055 2.826 1.117 2.4-1.073 2.41-1.121 2.835-1.121 6.992 0 6.67-.05 7.079.133l2.91 1.3a3.723 3.723 0 012.2 3.4l.002-.005z" fill="#FF9873"/><path d="M9.983 28.703a5.867 5.867 0 10-5.867-5.867 5.874 5.874 0 005.867 5.867zm0-8.684a2.816 2.816 0 110 5.632 2.816 2.816 0 010-5.632zm29.326 8.684a5.867 5.867 0 10-5.866-5.867 5.874 5.874 0 005.867 5.867zm0-8.684a2.816 2.816 0 110 5.632 2.816 2.816 0 010-5.632zm8.983 14.32v2.516a1.526 1.526 0 01-3.05 0v-2.516a.667.667 0 00-.395-.609l-2.614-1.167h-4.944a5.466 5.466 0 012.233 4.4v4.517a1.526 1.526 0 01-3.051 0v-4.513a2.412 2.412 0 00-1.427-2.2l-4.927-2.2h-.431a5.632 5.632 0 01-10.076 0h-.43l-4.928 2.2a2.412 2.412 0 00-1.427 2.2v4.517a1.526 1.526 0 01-3.05 0v-4.517A5.467 5.467 0 0112 32.563H7.06L4.447 33.73a.667.667 0 00-.396.609v2.516a1.526 1.526 0 11-3.05 0v-2.516a3.722 3.722 0 012.2-3.395c3.177-1.418 3.1-1.432 3.533-1.432 6.992 0 6.668-.05 7.078.133l2.213.988 2.205-.985c.381-.171.477-.133 2.434-.133a1.527 1.527 0 011.481 1.161 2.577 2.577 0 005 0 1.527 1.527 0 011.482-1.161h1.814c.43 0 .449.055 2.826 1.117 2.4-1.073 2.41-1.121 2.835-1.121 6.992 0 6.67-.05 7.079.133l2.91 1.3a3.723 3.723 0 012.2 3.4l.002-.005z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" stroke="transparent" id="phone"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.9 12C1.9 6.422 6.422 1.9 12 1.9c5.574 0 10.1 4.593 10.1 10.1 0 3.418-1.516 5.547-2.273 6.398a.9.9 0 001.345 1.196C22.122 18.526 23.9 15.99 23.9 12 23.9 5.507 18.576.1 12 .1 5.427.1.1 5.428.1 12c0 6.576 5.407 11.9 11.9 11.9 3.23 0 5.212-1.227 6.105-2.839.434-.784.588-1.628.502-2.382-.065-.566-.275-1.136-.66-1.57a1.029 1.029 0 00-.405-1.177l-1.8-1.2a1.029 1.029 0 00-1.426.286l-.423.635a.617.617 0 01-.343.274c-.483.127-1.763.185-3.713-1.765-1.95-1.95-1.892-3.23-1.764-3.712a.617.617 0 01.274-.344l.635-.423c.472-.315.6-.954.285-1.426l-1.2-1.799a1.029 1.029 0 00-1.26-.375l-.541.232a1.89 1.89 0 00-.946.892c-.167.334-.297.686-.314 1.059-.056 1.176.202 4.072 3.429 7.299 3.226 3.226 6.123 3.484 7.299 3.429.369-.017.718-.145 1.049-.31.015.06.027.127.035.2.043.37-.03.839-.288 1.305-.492.888-1.762 1.911-4.53 1.911-5.507 0-10.1-4.526-10.1-10.1zm9.2-7a.9.9 0 01.9-.9 7.9 7.9 0 017.9 7.9.9.9 0 01-1.8 0A6.1 6.1 0 0012 5.9a.9.9 0 01-.9-.9zm.9 2.1a.9.9 0 000 1.8 3.1 3.1 0 013.1 3.1.9.9 0 001.8 0A4.9 4.9 0 0012 7.1z"/></symbol><symbol viewBox="0 0 50 50" fill="none" id="rocket"><path d="M45.062 7.547l-.17-.945a1.3 1.3 0 00-1.05-1.05l-.95-.173a23.586 23.586 0 00-12.03.955 24.108 24.108 0 00-11.19 8.265l-1.53-.525a7.185 7.185 0 00-7.166 1.48l-4.83 4.39a3.512 3.512 0 002.252 6.106l4.273.133a4.244 4.244 0 001.187 3.7l6.704 6.705a4.243 4.243 0 003.7 1.187l.133 4.271a3.512 3.512 0 006.098 2.246l4.39-4.829a7.186 7.186 0 001.48-7.167l-.526-1.529a24.015 24.015 0 008.264-11.192 23.585 23.585 0 00.956-12.031l.005.003zM7.902 21.875l4.828-4.39a4.576 4.576 0 014.563-.943l.704.242a55.912 55.912 0 00-4.24 6.822l-5.278-.164a.9.9 0 01-.578-1.567zm26 11.271a4.576 4.576 0 01-.943 4.565l-4.39 4.829a.9.9 0 01-1.566-.578l-.166-5.281a55.816 55.816 0 006.823-4.241l.242.706zm1.578-5.466a53.163 53.163 0 01-11.2 7.374 1.633 1.633 0 01-1.873-.314c.008 0 .06.061-6.706-6.705a1.633 1.633 0 01-.314-1.874c.334-.682.683-1.356 1.047-2.021l7.078 7.078a1.304 1.304 0 101.846-1.845l-7.573-7.572a53.056 53.056 0 015.084-6.962 20.972 20.972 0 0119.614-6.882 20.97 20.97 0 01-7.005 19.723h.002zm-7.418-13.255a5.623 5.623 0 107.954 0 5.63 5.63 0 00-7.954 0zm6.108 6.109a3.015 3.015 0 11-4.264-4.263 3.015 3.015 0 014.264 4.263zM6.992 35.516a1.299 1.299 0 010-1.845l1.69-1.69a1.306 1.306 0 011.845 1.845l-1.69 1.69a1.3 1.3 0 01-1.845 0zm11.528 4.458a1.301 1.301 0 010 1.845l-1.69 1.69a1.304 1.304 0 01-2.22-.925c0-.345.138-.676.383-.92l1.69-1.69a1.3 1.3 0 011.845 0h-.008zm-2.85-3.363l-5.733 5.737a1.304 1.304 0 11-1.845-1.845l5.737-5.737a1.304 1.304 0 111.845 1.845h-.003z" fill="#FF9873"/><path d="M45.062 7.547l-.17-.945a1.3 1.3 0 00-1.05-1.05l-.95-.173a23.586 23.586 0 00-12.03.955 24.108 24.108 0 00-11.19 8.265l-1.53-.525a7.185 7.185 0 00-7.166 1.48l-4.83 4.39a3.512 3.512 0 002.252 6.106l4.273.133a4.244 4.244 0 001.187 3.7l6.704 6.705a4.243 4.243 0 003.7 1.187l.133 4.271a3.512 3.512 0 006.098 2.246l4.39-4.829a7.186 7.186 0 001.48-7.167l-.526-1.529a24.015 24.015 0 008.264-11.192 23.585 23.585 0 00.956-12.031l.005.003zM7.902 21.875l4.828-4.39a4.576 4.576 0 014.563-.943l.704.242a55.912 55.912 0 00-4.24 6.822l-5.278-.164a.9.9 0 01-.578-1.567zm26 11.271a4.576 4.576 0 01-.943 4.565l-4.39 4.829a.9.9 0 01-1.566-.578l-.166-5.281a55.816 55.816 0 006.823-4.241l.242.706zm1.578-5.466a53.163 53.163 0 01-11.2 7.374 1.633 1.633 0 01-1.873-.314c.008 0 .06.061-6.706-6.705a1.633 1.633 0 01-.314-1.874c.334-.682.683-1.356 1.047-2.021l7.078 7.078a1.304 1.304 0 101.846-1.845l-7.573-7.572a53.056 53.056 0 015.084-6.962 20.972 20.972 0 0119.614-6.882 20.97 20.97 0 01-7.005 19.723h.002zM6.992 35.516a1.299 1.299 0 010-1.845l1.69-1.69a1.306 1.306 0 011.845 1.845l-1.69 1.69a1.3 1.3 0 01-1.845 0zm11.528 4.458a1.301 1.301 0 010 1.845l-1.69 1.69a1.304 1.304 0 01-2.22-.925c0-.345.138-.676.383-.92l1.69-1.69a1.3 1.3 0 011.845 0h-.008zm-2.85-3.363l-5.733 5.737a1.304 1.304 0 11-1.845-1.845l5.737-5.737a1.304 1.304 0 111.845 1.845h-.003z" fill="#fff"/></symbol><symbol viewBox="0 0 46 46" id="short-site-logo"><path fill-rule="evenodd" clip-rule="evenodd" d="M33.42 12.377c5.811 5.814 5.811 15.24 0 21.055-5.813 5.814-15.236 5.814-21.047 0-5.812-5.814-5.812-15.24 0-21.055a14.841 14.841 0 0111.3-4.34l6.762-6.765C22.402-1.523 13.123.289 6.706 6.709c-8.941 8.944-8.941 23.447 0 32.391 8.941 8.945 23.438 8.945 32.38 0 8.941-8.944 8.941-23.447 0-32.391a23.082 23.082 0 00-2.61-2.249l-5.767 5.77a14.92 14.92 0 012.71 2.147z"/><path d="M26.457 14.483l9.715-9.718 2.752 2.753-3.36 7.572-4.25 4.252-4.857-4.86zm-1.133 5.992a3.437 3.437 0 010 4.859 3.433 3.433 0 01-4.857 0 3.436 3.436 0 010-4.859 3.433 3.433 0 014.857 0z"/></symbol><symbol viewBox="0 0 20 20" id="skyscraper"><path d="M8.203 17.617h3.555V20H8.203v-2.383z"/><path d="M7.031 17.031c0-.324.262-.586.586-.586h4.727c.324 0 .586.262.586.586V20h2.383V5.312a.586.586 0 00-.586-.585H12.93V2.969a.586.586 0 00-.586-.586h-1.758V.586a.586.586 0 10-1.172 0v1.797H7.617a.586.586 0 00-.586.586v1.758H5.273a.586.586 0 00-.585.585V20H7.03v-2.969zm.586-8.789h4.727a.586.586 0 110 1.172H7.617a.586.586 0 110-1.172zm0 2.344h4.727a.586.586 0 110 1.172H7.617a.586.586 0 110-1.172zm0 2.344h4.727a.586.586 0 110 1.172H7.617a.586.586 0 110-1.172zM.586 20h2.93V9.414H2.344a.586.586 0 00-.586.586v1.758H.586a.586.586 0 00-.586.586v7.07c0 .324.262.586.586.586zm.586-5.313a.586.586 0 111.172 0v2.344a.586.586 0 11-1.172 0v-2.343zm18.242-2.929h-1.172V10a.586.586 0 00-.586-.586h-1.172V20h2.93a.586.586 0 00.586-.586v-7.07a.586.586 0 00-.586-.586zm-.586 5.273a.586.586 0 11-1.172 0v-2.343a.586.586 0 111.172 0v2.343z"/></symbol><symbol viewBox="0 0 30 30" id="telegram"><path d="M12.025 18.181l-.38 5.584c.544 0 .78-.244 1.062-.537l2.552-2.545 5.289 4.041c.97.564 1.653.267 1.915-.93l3.47-16.973h.002c.307-1.497-.519-2.082-1.464-1.715L4.068 13.257c-1.393.564-1.372 1.374-.237 1.741l5.216 1.693 12.117-7.91c.57-.395 1.089-.177.662.217l-9.801 9.183z"/></symbol><symbol viewBox="0 0 24 30" id="twitter"><path d="M21 8.32a6.457 6.457 0 01-2.12.697c.762-.547 1.346-1.414 1.623-2.444a6.755 6.755 0 01-2.346 1.073c-.674-.86-1.633-1.396-2.696-1.396-2.039 0-3.692 1.979-3.692 4.418 0 .346.032.684.095 1.007-3.068-.184-5.789-1.944-7.61-4.617-.318.651-.5 1.41-.5 2.221 0 1.534.653 2.886 1.643 3.678a3.245 3.245 0 01-1.673-.555v.056c0 2.14 1.274 3.927 2.962 4.333-.31.1-.636.155-.973.155a2.97 2.97 0 01-.695-.082c.47 1.757 1.833 3.034 3.448 3.07-1.263 1.184-2.855 1.888-4.585 1.888a6.58 6.58 0 01-.881-.06c1.634 1.256 3.575 1.988 5.66 1.988 6.793 0 10.506-6.734 10.506-12.574l-.013-.572A8.33 8.33 0 0021 8.32z"/></symbol><symbol viewBox="0 0 50 50" fill="none" id="wreath"><path d="M46.767 16.295c-1.77 0-4.1-.249-6.232 1.922a16.967 16.967 0 00-2.52-4.337 6.41 6.41 0 00.445-9.177l-1.138-1.215a1.526 1.526 0 00-2.156-.073l-1.217 1.137a6.407 6.407 0 00-.3 9.046c.93 1 .94 1.017.94 1.017a14.055 14.055 0 11-19.877 0s.009-.022.94-1.017a6.407 6.407 0 00-.3-9.046l-1.217-1.137a1.526 1.526 0 00-2.165.073l-1.137 1.215a6.408 6.408 0 00.445 9.177 16.966 16.966 0 00-2.52 4.337c-2.126-2.168-4.451-1.922-6.232-1.922A1.526 1.526 0 001 17.82v1.668a6.407 6.407 0 006.6 6.4 17.1 17.1 0 001.564 5.944c-3.018.084-4.368 1.864-5.657 3.243a1.526 1.526 0 00.073 2.156c1.327 1.24 2.73 2.857 5.582 2.857a6.382 6.382 0 004.811-2.169 16.973 16.973 0 004.427 2.57 7.566 7.566 0 00-2.594 5.7 1.526 1.526 0 103.051 0 4.539 4.539 0 014.543-4.53h2.5a4.539 4.539 0 014.53 4.53 1.526 1.526 0 103.051 0 7.569 7.569 0 00-2.593-5.7 16.975 16.975 0 004.432-2.568 6.381 6.381 0 004.81 2.167c2.85 0 4.257-1.624 5.582-2.862a1.527 1.527 0 00.073-2.156c-1.168-1.25-2.6-3.172-5.657-3.243a17.115 17.115 0 001.564-5.939 6.41 6.41 0 006.6-6.4V17.82a1.526 1.526 0 00-1.526-1.526l.001.001zM36.135 6.688a3.353 3.353 0 01-.166 4.931 3.354 3.354 0 01.166-4.93zm-22.978 0a3.352 3.352 0 01.166 4.931 3.352 3.352 0 01-.166-4.93zM7.54 22.835a3.353 3.353 0 01-3.489-3.489 3.351 3.351 0 013.489 3.49zm-.762 13.207a3.353 3.353 0 014.931-.166 3.35 3.35 0 01-4.931.166zm35.736 0a3.347 3.347 0 01-4.931-.166 3.345 3.345 0 014.931.166zm-.762-13.207a3.351 3.351 0 013.489-3.489 3.354 3.354 0 01-3.489 3.49zM16.2 19.167V28.4a1.526 1.526 0 001.526 1.526h13.845A1.528 1.528 0 0033.1 28.4v-9.233a1.527 1.527 0 00-2.479-1.19L27.84 20.2l-2.115-2.113a1.526 1.526 0 00-2.157 0L21.456 20.2l-2.781-2.225a1.526 1.526 0 00-2.475 1.192zm3.051 3.174l1.369 1.095a1.526 1.526 0 002.032-.113l2-2 2 2a1.526 1.526 0 002.032.113l1.369-1.095v4.533h-10.8l-.002-4.533z" fill="#FF9873"/><path d="M46.767 16.295c-1.77 0-4.1-.249-6.232 1.922a16.967 16.967 0 00-2.52-4.337 6.41 6.41 0 00.445-9.177l-1.138-1.215a1.526 1.526 0 00-2.156-.073l-1.217 1.137a6.407 6.407 0 00-.3 9.046c.93 1 .94 1.017.94 1.017a14.055 14.055 0 11-19.877 0s.009-.022.94-1.017a6.407 6.407 0 00-.3-9.046l-1.217-1.137a1.526 1.526 0 00-2.165.073l-1.137 1.215a6.408 6.408 0 00.445 9.177 16.966 16.966 0 00-2.52 4.337c-2.126-2.168-4.451-1.922-6.232-1.922A1.526 1.526 0 001 17.82v1.668a6.407 6.407 0 006.6 6.4 17.1 17.1 0 001.564 5.944c-3.018.084-4.368 1.864-5.657 3.243a1.526 1.526 0 00.073 2.156c1.327 1.24 2.73 2.857 5.582 2.857a6.382 6.382 0 004.811-2.169 16.973 16.973 0 004.427 2.57 7.566 7.566 0 00-2.594 5.7 1.526 1.526 0 103.051 0 4.539 4.539 0 014.543-4.53h2.5a4.539 4.539 0 014.53 4.53 1.526 1.526 0 103.051 0 7.569 7.569 0 00-2.593-5.7 16.975 16.975 0 004.432-2.568 6.381 6.381 0 004.81 2.167c2.85 0 4.257-1.624 5.582-2.862a1.527 1.527 0 00.073-2.156c-1.168-1.25-2.6-3.172-5.657-3.243a17.115 17.115 0 001.564-5.939 6.41 6.41 0 006.6-6.4V17.82a1.526 1.526 0 00-1.526-1.526l.001.001zM36.135 6.688a3.353 3.353 0 01-.166 4.931 3.354 3.354 0 01.166-4.93zm-22.978 0a3.352 3.352 0 01.166 4.931 3.352 3.352 0 01-.166-4.93zM7.54 22.835a3.353 3.353 0 01-3.489-3.489 3.351 3.351 0 013.489 3.49zm-.762 13.207a3.353 3.353 0 014.931-.166 3.35 3.35 0 01-4.931.166zm35.736 0a3.347 3.347 0 01-4.931-.166 3.345 3.345 0 014.931.166zm-.762-13.207a3.351 3.351 0 013.489-3.489 3.354 3.354 0 01-3.489 3.49z" fill="#fff"/></symbol></svg></div>
+</body>
+</html>

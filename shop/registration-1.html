@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<title>Shoprice - Система управления торговлей</title>
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="img/favicon.png">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="registration">
+    <div class="registration__aside container">
+      <div class="registration__info">
+        <a href="/" class="registration__logo">
+          <svg><use href="img/icons.svg#site-logo"></use></svg>
+        </a>
+        <ol class="registration__steps steps-list">
+            <li class="steps-list__item 
+              active">
+              <span>Немного о вашей компании</span>
+            </li>
+            <li class="steps-list__item 
+              ">
+              <span>Контактные данные</span>
+            </li>
+            <li class="steps-list__item 
+              ">
+              <span>Завершение регистрации</span>
+            </li>
+        </ol>
+        <div class="registration__footer">
+          <a href="help.html" class="registration__link icon-link">
+            <svg class="icon-link__icon">
+              <use href="img/icons.svg#support"></use>
+            </svg>
+            Помощь
+          </a>
+          <a href="/" class="registration__link icon-link">
+            <svg class="icon-link__icon">
+              <use href="img/icons.svg#logout"></use>
+            </svg>
+            Выйти
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="registration__content container">
+      <div class="registration__info">
+        <h1 class="registration__heading heading-medium">Регистрация</h1>
+        
+<form class="registration__wrapper" action="registration-2.html">
+  <div class="registration__form-wrap">
+    <p class="registration__subtitle text-medium">Информация о компании</p>
+    <input type="text" placeholder="Название компании" class="registration__item input-item">
+    <input type="text" placeholder="О компании" class="registration__item input-item">
+    <p class="registration__tip text-tip">Коротко, о сфере</p>
+    <textarea placeholder="Описание" class="registration__item input-item"></textarea>
+    <p class="registration__tip text-tip">Подробно о вашей сфере деятельности, и ваши преимущества</p>
+    
+  <div class="registration__item drop-simple dropdown" data-dropdown='main'>
+    <div class="drop-simple-trigger" data-dropdown="trigger"></div>
+    <span data-dropdown='title'>Тип компании</span>
+    <div class="drop-simple-menu">
+      <label class="drop-simple-menu__item selected">
+        <input type="radio" name="company-type-1" value="ru" data-dropdown-title="Русский" hidden>
+        Русский
+      </label>
+      <label class="drop-simple-menu__item ">
+        <input type="radio" name="company-type-1" value="uzb" data-dropdown-title="O&#39;zbek" hidden>
+        O&#39;zbek
+      </label>
+      <label class="drop-simple-menu__item ">
+        <input type="radio" name="company-type-1" value="eng" data-dropdown-title="English" hidden>
+        English
+      </label>
+    </div>
+  </div>
+
+  </div>
+  <button class="registration__button-next button">Далее</button>
+</form>
+
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

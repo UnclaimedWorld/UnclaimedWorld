@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="libs/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Netpul - Авторизация</title>
+</head>
+
+<body>
+    <article class="authorization-section" style="background-image: url('img/registration.jpg');">
+        <form class="signin-window authorization-section__window">
+            <div class="signin-window__header grid__row j-s a-c">
+                <div class="signin-window__logo">
+                    <img src="img/netpul-logo.svg" alt="">
+                </div>
+                <div class="signin-window__close round-icon round-icon--medium">
+                    <img src="img/icons/close-gray.svg" alt="">
+                </div>
+            </div>
+
+            <label class="label-form">
+                <div class="label-form__title">
+                    Enter username, email or phone
+                    <img src="img/icons/info-gray.svg" class="info" alt="">
+                </div>
+                <input type="text" value="994 55 100 00 00" class="label-form__input inputfield">
+            </label>
+
+            <label class="label-form label-form--indicator-medium">
+                <div class="label-form__title">Password</div>
+                <div class="label-form__input">
+                    <input type="text" value="a7102f001o" class="inputfield">
+                    <div class="label-form__indicator">
+                        <img src="img/icons/close-eye.svg" alt="">
+                    </div>
+                </div>
+            </label>
+
+            <label class="label-form">
+                <div class="label-form__title">
+                    Enter your FIN
+                    <img src="img/icons/info-gray.svg" class="info" alt="">
+                </div>
+                <input type="text" value="41218124" class="label-form__input inputfield">
+            </label>
+
+            <label class="label-form">
+                <div class="label-form__title grid__row j-s">
+                    <span>OTP (One Time Password)</span>
+                    <span>
+                        <img src="img/icons/info-gray.svg" alt="" class="info">
+                        0:54
+                    </span>
+                </div>
+                <input type="text" value="987642" class="label-form__input inputfield">
+            </label>
+
+            <small class="signin-window__note note-small">
+                Now you will receive SMS
+                <a class="note-small__link link-text" href="#">Send SMS again</a>
+                <img src="img/icons/info-gray.svg" alt="" class="note-small__info">
+            </small>
+
+            <div class="signin-window__footer grid__row j-s">
+                <button class="signin-window__button-main button button--green">FORWARD</button>
+                <button class="signin-window__button-second button button--gray">I HAVE NO ACCOUNT</button>
+            </div>
+        </form>
+    </article>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

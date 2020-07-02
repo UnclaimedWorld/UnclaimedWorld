@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<title>Shoprice - Система управления торговлей</title>
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="img/favicon.png">
+<link rel="stylesheet" href="styles/main.css">
+  
+</head>
+<body>
+  <div class="page-wrap ">
+  
+<header class="header " data-header-mobile="header">
+  <div class="header-top container">
+    <div class="header-item header-item--dropdown drop-simple" data-dropdown='main'>
+      <div class="drop-simple-trigger" data-dropdown="trigger"></div>
+      <span data-dropdown='title'>Русский</span>
+      <div class="drop-simple-menu">
+        <label class="drop-simple-menu__item selected">
+          <input type="radio" name="language-1" value="ru" data-dropdown-title="Русский" hidden>
+          Русский
+        </label>
+        <label class="drop-simple-menu__item ">
+          <input type="radio" name="language-1" value="uzb" data-dropdown-title="O&#39;zbek" hidden>
+          O&#39;zbek
+        </label>
+        <label class="drop-simple-menu__item ">
+          <input type="radio" name="language-1" value="eng" data-dropdown-title="English" hidden>
+          English
+        </label>
+      </div>
+    </div>
+    <a href="#" class="header-item header__separator-left color-main">Инвесторам и акционерам</a>
+    <a href="login.html" class="ml-auto header-item color-main">
+      Вход / Регистрация
+    </a>
+
+  </div>
+  <div class="header-bottom container">
+    <a href="/" class="header__logo"><img src="img/site-logo.svg" alt=""></a>
+    <nav class="header-menu grid-row">
+      <a href="about.html" class="header-menu__item header-item">
+        О нас
+      </a>
+      <a href="how-to-start.html" class="header-menu__item header-item">
+        Как Начать работу?
+      </a>
+      <a href="nomenclature.html" class="header-menu__item header-item">
+        Номенклатура
+      </a>
+      <a href="markets.html" class="header-menu__item header-item">
+        Магазины
+      </a>
+      <a href="help.html" class="header-menu__item header-item">
+        Помощь
+      </a>
+    </nav>
+    <a href="#" class="header__button button button--small header__separator-left" data-modal-toggle="free-trial">Попробовать бесплатно</a>
+    <div class="header__menu-trigger" data-header-mobile="trigger">
+      <svg class="when-opened"><use href="img/icons.svg#menu"></use> </svg>
+      <svg class="when-closed"><use href="img/icons.svg#close"></use> </svg>
+    </div>
+  </div>
+</header>
+
+<header class="mobile-menu" data-header-mobile="menu">
+  <div class="mobile-menu__overlay" data-header-mobile='close'></div>
+  <div class="mobile-menu__scroll">
+    <div class="mobile-menu__content">
+      <a href="login.html" class="mobile-menu__item color-main">
+        Вход / Регистрация
+      </a>
+      <a href="about.html" class="mobile-menu__item">О нас</a>
+      <a href="how-to-start.html" class="mobile-menu__item">Как Начать работу?</a>
+      <a href="nomenclature.html" class="mobile-menu__item">Номенклатура</a>
+      <a href="markets.html" class="mobile-menu__item">Магазины</a>
+      <a href="help.html" class="mobile-menu__item">Помощь</a>
+      <div class="mobile-menu__item mobile-menu__item--select drop-simple" data-dropdown='main'>
+        <div class="drop-simple-trigger" data-dropdown="trigger"></div>
+        <span data-dropdown='title'>Русский</span>
+        <div class="drop-simple-menu drop-simple-menu--left">
+          <label class="drop-simple-menu__item selected">
+            <input type="radio" name="language-1" value="ru" data-dropdown-title="Русский" hidden>
+            Русский
+          </label>
+          <label class="drop-simple-menu__item ">
+            <input type="radio" name="language-1" value="uzb" data-dropdown-title="O&#39;zbek" hidden>
+            O&#39;zbek
+          </label>
+          <label class="drop-simple-menu__item ">
+            <input type="radio" name="language-1" value="eng" data-dropdown-title="English" hidden>
+            English
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  
+<div class="container">
+  <article class="inside-page inside-page--nomenclature">
+    <h1 class="heading-medium">Товар</h1>
+    <div class="inside-page__store-info store-info">
+      <div class="store-info__name">Картофель белорусский, 1кг</div>
+      <div class="store-info__title">Овощи и фрукты</div>
+      <div class="store-info__status color-good">В наличии</div>
+    </div>
+    <h1 class="inside-page__title inside-page__title--inpage heading-medium">Имеется в магазинах</h1>
+    <table class="inside-page__table table-simple table-simple--markets">
+      <tr class="table-simple__head">
+        <th>Название</th>
+        <th style="width: 242px">Тип</th>
+        <th style="width: 495px">Адрес</th>
+        <th style="width: 135px">Рейтинг</th>
+      </tr>
+      <tr class="table-simple__row">
+        <td>
+          <div class="table-simple__cell market-name">
+            <div class="market-name__avatar"
+              style="background-image: url(img/covers/market-1.jpg);">
+            </div>
+            <div class="market-name__title">Kwik-E-Mart</div>
+            <svg class="market-name__icon">
+              <use href="img/icons.svg#charity"></use>
+            </svg>
+          </div>
+        </td>
+        <td><div class="table-simple__cell">Продуктовый</div></td>
+        <td><div class="table-simple__cell">Мирабадский р-н, ул. Тараса Шевченко 33, 12</div></td>
+        <td>
+          <div class="table-simple__cell rating">
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-half"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-empty"></use>
+            </svg>
+          </div>
+        </td>
+      </tr>
+      <tr class="table-simple__row">
+        <td>
+          <div class="table-simple__cell market-name">
+            <div class="market-name__avatar"
+              style="background-color: #6FCF97">
+                Д
+            </div>
+            <div class="market-name__title">Дала-дукон</div>
+          </div>
+        </td>
+        <td><div class="table-simple__cell">Продуктовый</div></td>
+        <td><div class="table-simple__cell">Яшнабадский р-н, ул. Фаргона Йули 11, 34А</div></td>
+        <td>
+          <div class="table-simple__cell rating">
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-half"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-empty"></use>
+            </svg>
+          </div>
+        </td>
+      </tr>
+      <tr class="table-simple__row">
+        <td>
+          <div class="table-simple__cell market-name">
+            <div class="market-name__avatar"
+              style="background-color: #EB5757">
+                G
+            </div>
+            <div class="market-name__title">Grand Supermarket</div>
+          </div>
+        </td>
+        <td><div class="table-simple__cell">Супер-маркет</div></td>
+        <td><div class="table-simple__cell">Яккасарайский р-н, ул. Шота Руставели 5, 19В</div></td>
+        <td>
+          <div class="table-simple__cell rating">
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-half"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-empty"></use>
+            </svg>
+          </div>
+        </td>
+      </tr>
+      <tr class="table-simple__row">
+        <td>
+          <div class="table-simple__cell market-name">
+            <div class="market-name__avatar"
+              style="background-color: #2F80ED">
+                О
+            </div>
+            <div class="market-name__title">ООО Мини маркет</div>
+          </div>
+        </td>
+        <td><div class="table-simple__cell">Супер-маркет</div></td>
+        <td><div class="table-simple__cell">Мирзо-Улугбекский р-н, Буюк Ипак Йули 23</div></td>
+        <td>
+          <div class="table-simple__cell rating">
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-half"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-empty"></use>
+            </svg>
+          </div>
+        </td>
+      </tr>
+      <tr class="table-simple__row">
+        <td>
+          <div class="table-simple__cell market-name">
+            <div class="market-name__avatar"
+              style="background-color: #9B51E0">
+                Ч
+            </div>
+            <div class="market-name__title">ЧП “Маиший нарсалар”</div>
+          </div>
+        </td>
+        <td><div class="table-simple__cell">Бытовые товары</div></td>
+        <td><div class="table-simple__cell">Чиланзарский р-н, Кичик Халка Йули 94</div></td>
+        <td>
+          <div class="table-simple__cell rating">
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-half"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-empty"></use>
+            </svg>
+          </div>
+        </td>
+      </tr>
+      <tr class="table-simple__row">
+        <td>
+          <div class="table-simple__cell market-name">
+            <div class="market-name__avatar"
+              style="background-color: #828282">
+                D
+            </div>
+            <div class="market-name__title">DeFacto</div>
+            <svg class="market-name__icon">
+              <use href="img/icons.svg#charity"></use>
+            </svg>
+          </div>
+        </td>
+        <td><div class="table-simple__cell">Магазин одежды</div></td>
+        <td><div class="table-simple__cell">Яшнабадский р-н, ул. Лисунова 44</div></td>
+        <td>
+          <div class="table-simple__cell rating">
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-half"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-empty"></use>
+            </svg>
+          </div>
+        </td>
+      </tr>
+      <tr class="table-simple__row">
+        <td>
+          <div class="table-simple__cell market-name">
+            <div class="market-name__avatar"
+              style="background-color: #F2994A">
+                M
+            </div>
+            <div class="market-name__title">Mini Market</div>
+          </div>
+        </td>
+        <td><div class="table-simple__cell">Супер-маркет</div></td>
+        <td><div class="table-simple__cell">Яшнабадский р-н, ул. Авиасозлар 15</div></td>
+        <td>
+          <div class="table-simple__cell rating">
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-half"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-empty"></use>
+            </svg>
+          </div>
+        </td>
+      </tr>
+      <tr class="table-simple__row">
+        <td>
+          <div class="table-simple__cell market-name">
+            <div class="market-name__avatar"
+              style="background-color: #56CCF2">
+                S
+            </div>
+            <div class="market-name__title">Shaxlo market</div>
+          </div>
+        </td>
+        <td><div class="table-simple__cell">Гастроном</div></td>
+        <td><div class="table-simple__cell">Бектемирский р-н, ул. Ленина</div></td>
+        <td>
+          <div class="table-simple__cell rating">
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-filled"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-half"></use>
+            </svg>
+            <svg class="rating__item">
+              <use href="img/icons.svg#star-empty"></use>
+            </svg>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </article>
+</div>
+
+  <footer class="footer container">
+  <div class="footer__row grid-row grid-row--a-c">
+    <a href="#" class="footer__logo"><img src="img/genesis-logo.svg" alt="Genesis logo"></a>
+    <a class="footer-item footer-item--other" href="tel: +998712000002">+998 71 200 00 02</a>
+    <a class="footer-item footer-item--other" href="mailto: info@shoprice.uz">info@shoprice.uz</a>
+  </div>
+  <div class="footer__row footer__row--menu grid-row grid-row--wrap">
+    <a href="versions.html" class="footer-item">История версий</a>
+    <a href="terms.html" class="footer-item">Условия пользования</a>
+    <a href="public.html" class="footer-item">Публичная оферта</a>
+  </div>
+</footer>
+  </div>
+  <article class="modal modal-trial" id="free-trial">
+  <div class="modal__overlay" data-modal-close="free-trial"></div>
+  <div class="modal-window">
+    <div class="modal-window__cover">
+      <img src="img/covers/free-trial.svg" alt="">
+    </div>
+    <form class="modal-window__form">
+      <h2 class="modal-window__heading">Попробовать бесплатно</h2>
+      <input type="text" placeholder="Ваше имя" class="modal-window__item input-item">
+      <input type="email" placeholder="Электронная почта" class="modal-window__item input-item">
+      <input type="phone" placeholder="Номер телефона" class="modal-window__item input-item">
+      <button class="modal-window__button button">Отправить</button>
+      <p class="modal-window__terms">
+        Нажимая «Отправить» вы получаете пробную версию системы для ознакомления, и соглашаетесь с <a href="terms.html" class="link">условиями пользования</a>
+      </p>
+    </form>
+    <div class="modal-window__cancel text-small" data-modal-close="free-trial">Отмена</div>
+  </div>
+</article>
+  <script src="scripts/main.js"></script>
+  
+</body>
+</html>

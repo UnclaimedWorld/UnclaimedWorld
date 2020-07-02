@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="libs/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Netpul - Регистрация</title>
+</head>
+
+<body>
+    <article class="authorization-section" style="background-image: url('img/registration.jpg');">
+        <form class="signin-window authorization-section__window">
+            <div class="signin-window__header grid__row j-s a-c">
+                <div class="signin-window__logo">
+                    <img src="img/netpul-logo.svg" alt="">
+                </div>
+                <div class="signin-window__close round-icon round-icon--medium">
+                    <img src="img/icons/close-gray.svg" alt="">
+                </div>
+            </div>
+
+            <div class="signin-window__avatar form-file">
+                <label class="form-file__item">
+                    <input type="file">
+                    <img src="img/icons/user-black.svg" alt="">
+                </label>
+                <div class="form-file__title">You can set your photo</div>
+            </div>
+
+            <label class="label-form">
+                <div class="label-form__title">Enter your name</div>
+                <input type="text" class="label-form__input inputfield">
+            </label>
+
+            <label class="label-form label-form--indicator-medium">
+                <div class="label-form__title">Enter your last name</div>
+                <div class="label-form__input">
+                    <input type="text" class="inputfield">
+                </div>
+            </label>
+
+            <label class="label-form">
+                <div class="label-form__title">Enter your surname</div>
+                <input type="text" class="label-form__input inputfield">
+            </label>
+
+            <label class="terms-text grid__row">
+                <div class="terms-text__check checkmark selected">
+                    <input type="checkbox" class="checkmark__input" checked>
+                </div>
+                <div class="terms-text__title">
+                    Continuing, I accept the <a href="#">privacy policy</a> and <a href="#">terms of service</a> of the service, and also give permission for the processing of personal data
+                </div>
+            </label>
+
+            <div class="signin-window__footer grid__row j-s">
+                <button class="signin-window__button-main button button--green">CREATE WALLET</button>
+            </div>
+        </form>
+    </article>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

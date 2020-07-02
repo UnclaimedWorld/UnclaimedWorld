@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.slide-wrap {
+  height: 4000px;
+}
+.slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #faa9ce;
+}
+.slide.active {
+  z-index: 2;
+}
+.wrap-content {
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: #0afefa;
+}
+.wrap-content.normal {
+  position: static;
+}
+
+.perspective-container {
+  perspective: 100px;
+}
+.perspective-element {
+  height: 200px;
+  width: 400px;
+  background: #2377a0;
+  transform: rotate3d(180,-45,0,-135deg);
+}

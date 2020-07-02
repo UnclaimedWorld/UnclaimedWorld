@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_128" data-name="Rectangle 128" width="16" height="16" transform="translate(876 452)" fill="red"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_94" data-name="Mask Group 94" transform="translate(-876 -452)" clip-path="url(#clip-path)">
+    <g id="pie-chart" transform="translate(875.293 451.263)">
+      <path id="Path_201" data-name="Path 201" d="M15.42,11.552a7.27,7.27,0,1,1-9.6-9.495" fill="none" stroke="#acacac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.454"/>
+      <path id="Path_202" data-name="Path 202" d="M15.994,8.724a7.27,7.27,0,0,0-7.27-7.27v7.27Z" fill="none" stroke="#acacac" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.454"/>
+    </g>
+  </g>
+</svg>

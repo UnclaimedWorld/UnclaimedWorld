@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<title>Shoprice - Система управления торговлей</title>
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="img/favicon.png">
+<link rel="stylesheet" href="styles/main.css">
+  
+</head>
+<body>
+  <div class="page-wrap ">
+  
+<header class="header " data-header-mobile="header">
+  <div class="header-top container">
+    <div class="header-item header-item--dropdown drop-simple" data-dropdown='main'>
+      <div class="drop-simple-trigger" data-dropdown="trigger"></div>
+      <span data-dropdown='title'>Русский</span>
+      <div class="drop-simple-menu">
+        <label class="drop-simple-menu__item selected">
+          <input type="radio" name="language-1" value="ru" data-dropdown-title="Русский" hidden>
+          Русский
+        </label>
+        <label class="drop-simple-menu__item ">
+          <input type="radio" name="language-1" value="uzb" data-dropdown-title="O&#39;zbek" hidden>
+          O&#39;zbek
+        </label>
+        <label class="drop-simple-menu__item ">
+          <input type="radio" name="language-1" value="eng" data-dropdown-title="English" hidden>
+          English
+        </label>
+      </div>
+    </div>
+    <a href="#" class="header-item header__separator-left color-main">Инвесторам и акционерам</a>
+    <a href="login.html" class="ml-auto header-item color-main">
+      Вход / Регистрация
+    </a>
+
+  </div>
+  <div class="header-bottom container">
+    <a href="/" class="header__logo"><img src="img/site-logo.svg" alt=""></a>
+    <nav class="header-menu grid-row">
+      <a href="about.html" class="header-menu__item header-item">
+        О нас
+      </a>
+      <a href="how-to-start.html" class="header-menu__item header-item">
+        Как Начать работу?
+      </a>
+      <a href="nomenclature.html" class="header-menu__item header-item">
+        Номенклатура
+      </a>
+      <a href="markets.html" class="header-menu__item header-item">
+        Магазины
+      </a>
+      <a href="help.html" class="header-menu__item header-item">
+        Помощь
+      </a>
+    </nav>
+    <a href="#" class="header__button button button--small header__separator-left" data-modal-toggle="free-trial">Попробовать бесплатно</a>
+    <div class="header__menu-trigger" data-header-mobile="trigger">
+      <svg class="when-opened"><use href="img/icons.svg#menu"></use> </svg>
+      <svg class="when-closed"><use href="img/icons.svg#close"></use> </svg>
+    </div>
+  </div>
+</header>
+
+<header class="mobile-menu" data-header-mobile="menu">
+  <div class="mobile-menu__overlay" data-header-mobile='close'></div>
+  <div class="mobile-menu__scroll">
+    <div class="mobile-menu__content">
+      <a href="login.html" class="mobile-menu__item color-main">
+        Вход / Регистрация
+      </a>
+      <a href="about.html" class="mobile-menu__item">О нас</a>
+      <a href="how-to-start.html" class="mobile-menu__item">Как Начать работу?</a>
+      <a href="nomenclature.html" class="mobile-menu__item">Номенклатура</a>
+      <a href="markets.html" class="mobile-menu__item">Магазины</a>
+      <a href="help.html" class="mobile-menu__item">Помощь</a>
+      <div class="mobile-menu__item mobile-menu__item--select drop-simple" data-dropdown='main'>
+        <div class="drop-simple-trigger" data-dropdown="trigger"></div>
+        <span data-dropdown='title'>Русский</span>
+        <div class="drop-simple-menu drop-simple-menu--left">
+          <label class="drop-simple-menu__item selected">
+            <input type="radio" name="language-1" value="ru" data-dropdown-title="Русский" hidden>
+            Русский
+          </label>
+          <label class="drop-simple-menu__item ">
+            <input type="radio" name="language-1" value="uzb" data-dropdown-title="O&#39;zbek" hidden>
+            O&#39;zbek
+          </label>
+          <label class="drop-simple-menu__item ">
+            <input type="radio" name="language-1" value="eng" data-dropdown-title="English" hidden>
+            English
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  
+  <article>
+    <span data-tooltip-toggle>
+      <span class="tooltip-content">123123</span>
+    </span>
+    <section class="tarifs-section">
+      <h2 class="tarifs-section__heading container heading-medium">Тарифы</h2>
+      <p class="tarifs-section__subtitle container text-medium">Выберите оптимальный вариант для вашей компании</p>
+      <div class="block-wrap">
+        <div class="container block-wrap__container tarifs-section__wrap-container slider-block">
+          
+  
+  <div class="block-wrap__item tarifs-section__item tarif-item">
+    <h3 class="tarif-item__heading">Ознакомительный</h3>
+    <p class="tarif-item__subtitle text-minimum">Для ознакомления с системой</p>
+    <p class="tarif-item__price heading-large">Бесплатно</p>
+    <small class="tarif-item__time text-small">7 ДНЕЙ</small>
+    <ul class="tarif-item__list">
+      <li class="tarif-item__list-item list-item ">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">Управление складом</div>
+        <div class="list-item__icon list-item__icon--action" data-tooltip data-tooltip-inset data-tooltip-position="left">
+          <div class="tooltip-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure autem enim quis facere hic ratione eaque ipsum, maxime consequuntur!</div>
+          <svg><use href="img/icons.svg#question-round"></use></svg>
+        </div>
+      </li>
+      <li class="tarif-item__list-item list-item ">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">2 кассира</div>
+        <div class="list-item__icon list-item__icon--action" data-tooltip data-tooltip-inset data-tooltip-position="left">
+          <div class="tooltip-content">4451264512</div>
+          <svg><use href="img/icons.svg#question-round"></use></svg>
+        </div>
+      </li>
+      <li class="tarif-item__list-item list-item ">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">Статистика продаж</div>
+        <div class="list-item__icon list-item__icon--action" data-tooltip data-tooltip-inset data-tooltip-position="left">
+          <div class="tooltip-content">4451264512</div>
+          <svg><use href="img/icons.svg#question-round"></use></svg>
+        </div>
+      </li>
+    </ul>
+    <button class="tarif-item__button button button--outline" 
+      data-modal-toggle=free-trial>
+      Попробовать
+    </button>
+  </div>
+          
+  
+    
+  <div class="tarif-item--main block-wrap__item tarifs-section__item tarif-item">
+    <h3 class="tarif-item__heading">Стандартный</h3>
+    <p class="tarif-item__subtitle text-minimum">Полноценное использование системы</p>
+    <p class="tarif-item__price heading-large">480 000</p>
+    <small class="tarif-item__time text-small">СУМ В МЕСЯЦ</small>
+    <ul class="tarif-item__list">
+      <li class="tarif-item__list-item list-item list-item--white">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">Управление складом</div>
+      </li>
+      <li class="tarif-item__list-item list-item list-item--white">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">Служба поддержки</div>
+      </li>
+      <li class="tarif-item__list-item list-item list-item--white">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">10 кассирова</div>
+        <div class="list-item__icon list-item__icon--action" data-tooltip data-tooltip-inset data-tooltip-position="left">
+          <div class="tooltip-content">98658164512</div>
+          <svg><use href="img/icons.svg#question-round"></use></svg>
+        </div>
+      </li>
+      <li class="tarif-item__list-item list-item list-item--white">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">Статистика продаж</div>
+      </li>
+      <li class="tarif-item__list-item list-item list-item--white">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">Аналитика товарооборотов</div>
+      </li>
+    </ul>
+    <button class="tarif-item__button button button--white" 
+      >
+      Начать работу
+    </button>
+  </div>
+          
+  
+  <div class="block-wrap__item tarifs-section__item tarif-item">
+    <h3 class="tarif-item__heading">Корпорация</h3>
+    <p class="tarif-item__subtitle text-minimum">Для ознакомления с системой</p>
+    <p class="tarif-item__price heading-large">Настраиваемый</p>
+    <small class="tarif-item__time text-small">ПО ДОГОВОРУ</small>
+    <ul class="tarif-item__list">
+      <li class="tarif-item__list-item list-item ">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">Приоритет в поддержке</div>
+      </li>
+      <li class="tarif-item__list-item list-item ">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">Настраиваемые возможности</div>
+        <div class="list-item__icon list-item__icon--action" data-tooltip data-tooltip-inset data-tooltip-position="left">
+          <div class="tooltip-content">9876543</div>
+          <svg><use href="img/icons.svg#question-round"></use></svg>
+        </div>
+      </li>
+      <li class="tarif-item__list-item list-item ">
+        <div class="list-item__icon list-item__icon--main">
+          <svg><use href="img/icons.svg#check-round"></use></svg>
+        </div>
+        <div class="list-item__title">Полный доступ</div>
+        <div class="list-item__icon list-item__icon--action" data-tooltip data-tooltip-inset data-tooltip-position="left">
+          <div class="tooltip-content">9876543</div>
+          <svg><use href="img/icons.svg#question-round"></use></svg>
+        </div>
+      </li>
+    </ul>
+    <button class="tarif-item__button button button--outline" 
+      >
+      Связаться с нами
+    </button>
+  </div>
+        </div>
+      </div>
+    </section>
+    <section class="materials-section container">
+      <h2 class="materials-section__heading heading-medium">Оборудование для работы</h2>
+      <p class="materials-section__subtitle text-medium">Рекомендуем к приобретению</p>
+      <div class="block-wrap materials-section__wrap">
+        <div class="block-wrap__container materials-section__wrap-container slider-block">
+          <div class="materials-section__item block-wrap__item material-item material-item--large materials-section__item--large">
+            <div class="material-item__cover">
+              <img src="img/materials/monoblock.png" alt="">
+            </div>
+            <div class="material-item__wrap">
+              <h4 class="material-item__heading">Моноблок для терминала</h4>
+              <p class="material-item__description text-minimum">Сенсорная касса (моноблок) — это универсальное устройство «всё в одном». Проще говоря, это компьютер, системный блок которого встроен в монитор. Он занимает мало места, выглядит современно и не требует дополнительных расходов на установку. Учитывая это, неудивительно, что моноблоки интересны как для продуктового ритейла, так и для магазинов одежды и бутиков, DIY-магазинов, предприятий сферы Droggeri и Horeca.</p>
+            </div>
+          </div>
+          <div class="materials-section__item block-wrap__item material-item ">
+            <div class="material-item__cover">
+              <img src="img/materials/code-scanner.png" alt="">
+            </div>
+            <div class="material-item__wrap">
+              <h4 class="material-item__heading">Штрих-код сканер</h4>
+              <p class="material-item__description text-minimum">Для считывания кода на упаковке товара</p>
+            </div>
+          </div>
+          <div class="materials-section__item block-wrap__item material-item ">
+            <div class="material-item__cover">
+              <img src="img/materials/check-printer.png" alt="">
+            </div>
+            <div class="material-item__wrap">
+              <h4 class="material-item__heading">Принтер для чека</h4>
+              <p class="material-item__description text-minimum">Для печати чеков</p>
+            </div>
+          </div>
+          <div class="materials-section__item block-wrap__item material-item ">
+            <div class="material-item__cover">
+              <img src="img/materials/safe.png" alt="">
+            </div>
+            <div class="material-item__wrap">
+              <h4 class="material-item__heading">Кассовое хранилище</h4>
+              <p class="material-item__description text-minimum">Для хранения наличных средств</p>
+            </div>
+          </div>
+          <div class="materials-section__item block-wrap__item material-item ">
+            <div class="material-item__cover">
+              <img src="img/materials/code-printer.png" alt="">
+            </div>
+            <div class="material-item__wrap">
+              <h4 class="material-item__heading">Принтер для штрих-кодов</h4>
+              <p class="material-item__description text-minimum">Для печати этикеток, ценников и штрих-кодов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <footer class="footer container">
+  <div class="footer__row grid-row grid-row--a-c">
+    <a href="#" class="footer__logo"><img src="img/genesis-logo.svg" alt="Genesis logo"></a>
+    <a class="footer-item footer-item--other" href="tel: +998712000002">+998 71 200 00 02</a>
+    <a class="footer-item footer-item--other" href="mailto: info@shoprice.uz">info@shoprice.uz</a>
+  </div>
+  <div class="footer__row footer__row--menu grid-row grid-row--wrap">
+    <a href="versions.html" class="footer-item">История версий</a>
+    <a href="terms.html" class="footer-item">Условия пользования</a>
+    <a href="public.html" class="footer-item">Публичная оферта</a>
+  </div>
+</footer>
+  </div>
+  <article class="modal modal-trial" id="free-trial">
+  <div class="modal__overlay" data-modal-close="free-trial"></div>
+  <div class="modal-window">
+    <div class="modal-window__cover">
+      <img src="img/covers/free-trial.svg" alt="">
+    </div>
+    <form class="modal-window__form">
+      <h2 class="modal-window__heading">Попробовать бесплатно</h2>
+      <input type="text" placeholder="Ваше имя" class="modal-window__item input-item">
+      <input type="email" placeholder="Электронная почта" class="modal-window__item input-item">
+      <input type="phone" placeholder="Номер телефона" class="modal-window__item input-item">
+      <button class="modal-window__button button">Отправить</button>
+      <p class="modal-window__terms">
+        Нажимая «Отправить» вы получаете пробную версию системы для ознакомления, и соглашаетесь с <a href="terms.html" class="link">условиями пользования</a>
+      </p>
+    </form>
+    <div class="modal-window__cancel text-small" data-modal-close="free-trial">Отмена</div>
+  </div>
+</article>
+  <script src="scripts/main.js"></script>
+  
+  <script>
+    (function sliders() {
+      var slider = document.querySelectorAll(".slider-block");
+      slider.forEach(item => {
+        var flkty = new Flickity(item, {
+          contain: true,
+          cellAlign: "left",
+          prevNextButtons: false,
+          watchCSS: true,
+          pageDots: false,
+          wrapAround: true,
+          adaptiveHeight: true,
+        });
+      })
+    })();
+  </script>
+
+</body>
+</html>

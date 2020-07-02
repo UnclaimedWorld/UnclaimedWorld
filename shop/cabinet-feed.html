@@ -1,0 +1,791 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<title>Shoprice - Система управления торговлей</title>
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="img/favicon.png">
+<link rel="stylesheet" href="styles/main.css">
+  
+</head>
+<body>
+  <div class="page-wrap no-overflow">
+  
+<header class="header " data-header-mobile="header">
+  <div class="header-top container">
+    <div class="header-item header-item--dropdown drop-simple" data-dropdown='main'>
+      <div class="drop-simple-trigger" data-dropdown="trigger"></div>
+      <span data-dropdown='title'>Русский</span>
+      <div class="drop-simple-menu">
+        <label class="drop-simple-menu__item selected">
+          <input type="radio" name="language-1" value="ru" data-dropdown-title="Русский" hidden>
+          Русский
+        </label>
+        <label class="drop-simple-menu__item ">
+          <input type="radio" name="language-1" value="uzb" data-dropdown-title="O&#39;zbek" hidden>
+          O&#39;zbek
+        </label>
+        <label class="drop-simple-menu__item ">
+          <input type="radio" name="language-1" value="eng" data-dropdown-title="English" hidden>
+          English
+        </label>
+      </div>
+    </div>
+    <a href="#" class="header-item header__separator-left color-main">Инвесторам и акционерам</a>
+    <a href="login.html" class="ml-auto header-item color-main">
+      Вход / Регистрация
+    </a>
+
+  </div>
+  <div class="header-bottom container">
+    <a href="/" class="header__logo"><img src="img/site-logo.svg" alt=""></a>
+    <nav class="header-menu grid-row">
+      <a href="about.html" class="header-menu__item header-item">
+        О нас
+      </a>
+      <a href="how-to-start.html" class="header-menu__item header-item">
+        Как Начать работу?
+      </a>
+      <a href="nomenclature.html" class="header-menu__item header-item">
+        Номенклатура
+      </a>
+      <a href="markets.html" class="header-menu__item header-item">
+        Магазины
+      </a>
+      <a href="help.html" class="header-menu__item header-item">
+        Помощь
+      </a>
+    </nav>
+    <a href="#" class="header__button button button--small header__separator-left" data-modal-toggle="free-trial">Попробовать бесплатно</a>
+    <div class="header__menu-trigger" data-header-mobile="trigger">
+      <svg class="when-opened"><use href="img/icons.svg#menu"></use> </svg>
+      <svg class="when-closed"><use href="img/icons.svg#close"></use> </svg>
+    </div>
+  </div>
+</header>
+
+<header class="mobile-menu" data-header-mobile="menu">
+  <div class="mobile-menu__overlay" data-header-mobile='close'></div>
+  <div class="mobile-menu__scroll">
+    <div class="mobile-menu__content">
+      <a href="login.html" class="mobile-menu__item color-main">
+        Вход / Регистрация
+      </a>
+      <a href="about.html" class="mobile-menu__item">О нас</a>
+      <a href="how-to-start.html" class="mobile-menu__item">Как Начать работу?</a>
+      <a href="nomenclature.html" class="mobile-menu__item">Номенклатура</a>
+      <a href="markets.html" class="mobile-menu__item">Магазины</a>
+      <a href="help.html" class="mobile-menu__item">Помощь</a>
+      <div class="mobile-menu__item mobile-menu__item--select drop-simple" data-dropdown='main'>
+        <div class="drop-simple-trigger" data-dropdown="trigger"></div>
+        <span data-dropdown='title'>Русский</span>
+        <div class="drop-simple-menu drop-simple-menu--left">
+          <label class="drop-simple-menu__item selected">
+            <input type="radio" name="language-1" value="ru" data-dropdown-title="Русский" hidden>
+            Русский
+          </label>
+          <label class="drop-simple-menu__item ">
+            <input type="radio" name="language-1" value="uzb" data-dropdown-title="O&#39;zbek" hidden>
+            O&#39;zbek
+          </label>
+          <label class="drop-simple-menu__item ">
+            <input type="radio" name="language-1" value="eng" data-dropdown-title="English" hidden>
+            English
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  
+  <div class="logged-wrap">
+    <div class="container">
+      <div class="company-header" 
+          style="background-image: url('img/covers/market.jpg')">
+        <div class="company-header__name user-name">
+          <div class="user-name__avatar" style="background-color: #EB5757">G</div>
+          <h3 class="user-name__heading">Grand Supermarket</h3>
+          <p class="user-name__subtitle">Продуктовый магазин  •  Закрыто</p>
+        </div>
+        <div class="company-header__additional additional-panel">
+          <svg class="additional-panel__icon">
+            <use href="img/icons.svg#charity"></use>
+          </svg>Благотворительность
+        </div>
+      </div>
+      <div class="cabinet-nav">
+        <div class="cabinet-nav__tabs nav-tab-wrap">
+          <a href="cabinet-goods.html" class="nav-tab 
+            ">Список товаров
+          </a>
+          <a href="cabinet-charity.html" class="nav-tab 
+            ">Благотворительность
+          </a>
+          <a href="cabinet-contacts.html" class="nav-tab 
+            ">Адрес / Контакты
+          </a>
+          <a href="cabinet-photo.html" class="nav-tab 
+            ">Фото
+          </a>
+          <a href="cabinet-feed.html" class="nav-tab 
+            active">Отзывы
+            <span class="nav-tab__counter">16</span>
+          </a>
+        </div>
+        <form class="cabinet-nav__filter filter-toolset" data-checker="main">
+          <input type="search" class="filter-toolset__input simple-input" placeholder="Поиск товаров">
+          <div class="filter-toolset__controls">
+            <button class="filter-toolset__icon">
+              <svg><use href="img/icons.svg#search"></use></svg>
+            </button>
+            <div class="filter-toolset__icon" data-checker="toggle">
+              <svg><use href="img/icons.svg#levels"></use></svg>
+            </div>
+          </div>
+          <div class="filter-toolset__menu filter-menu" data-checker="menu">
+            <label class="filter-menu__checkbox check-label-wrap">
+              <input type="checkbox" hidden>
+              <div class="check-label">Только в наличии</div>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="logged-wrap__content cabinet-content container">
+      
+  <article class="cabinet-content__double grid-row grid-row--wrap">
+    <div class="cabinet-content__section cabinet-content__block cabinet-content__block--large cabinet-content__block--no-offset">
+      <h1 class="cabinet-content__header heading-infra-medium">Отзывы</h1>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cabinet-content__feedback feedback-item">
+        <div class="grid-row grid-row--a-c grid-row--j-s">
+          <div class="feedback-item__avatar avatar-username-wrap">
+            <div class="avatar-username" 
+              style="background-color: #F2994A">А
+            </div>
+            <div class="avatar-username-title text-small">Аваз Ганиев</div>
+          </div>
+          <div class="feedback-item__link text-small">Пожаловаться</div>
+        </div>
+        <div class="feedback-item__rating rating">
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-filled"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-half"></use>
+          </svg>
+          <svg class="rating__item">
+            <use href="img/icons.svg#star-empty"></use>
+          </svg>
+        </div>
+        <div class="expand-block collapsed" data-expand="main" data-expand-height="88">
+          <div class="expand-block__wrap" data-expand="content">
+            <p class="feedback-item__description">Господа, консультация с широким активом способствует подготовке и реализации анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы неоднозначны и будут описаны максимально подробно. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.</p>
+          </div>
+          <button class="expand-block__button icon-button" data-expand="trigger">
+            <svg><use href="img/icons.svg#more"></use></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="cabinet-content__aside cabinet-content__block leave-feedback">
+      <h4 class="leave-feedback__heading heading-infra-medium">Оставить отзыв</h4>
+      <textarea name="" id="" cols="30" rows="10" class="leave-feedback__input input-item" placeholder="Ваш отзыв"></textarea>
+      <h5 class="leave-feedback__title text-small">Не забудьте поставить оценку</h5>
+      <div class="leave-feedback__rating choose-rating">
+        
+        <svg class="choose-rating__item"><use href="img/icons.svg#star-empty"></use></svg>
+        
+        <svg class="choose-rating__item"><use href="img/icons.svg#star-empty"></use></svg>
+        
+        <svg class="choose-rating__item"><use href="img/icons.svg#star-empty"></use></svg>
+        
+        <svg class="choose-rating__item"><use href="img/icons.svg#star-empty"></use></svg>
+        
+        <svg class="choose-rating__item"><use href="img/icons.svg#star-empty"></use></svg>
+        
+      </div>
+      <button class="leave-feedback__button button">Отправить</button>
+    </div>
+  </article>
+          
+    </div>
+  </div>
+
+  </div>
+  <article class="modal modal-trial" id="free-trial">
+  <div class="modal__overlay" data-modal-close="free-trial"></div>
+  <div class="modal-window">
+    <div class="modal-window__cover">
+      <img src="img/covers/free-trial.svg" alt="">
+    </div>
+    <form class="modal-window__form">
+      <h2 class="modal-window__heading">Попробовать бесплатно</h2>
+      <input type="text" placeholder="Ваше имя" class="modal-window__item input-item">
+      <input type="email" placeholder="Электронная почта" class="modal-window__item input-item">
+      <input type="phone" placeholder="Номер телефона" class="modal-window__item input-item">
+      <button class="modal-window__button button">Отправить</button>
+      <p class="modal-window__terms">
+        Нажимая «Отправить» вы получаете пробную версию системы для ознакомления, и соглашаетесь с <a href="terms.html" class="link">условиями пользования</a>
+      </p>
+    </form>
+    <div class="modal-window__cancel text-small" data-modal-close="free-trial">Отмена</div>
+  </div>
+</article>
+  <script src="scripts/main.js"></script>
+  
+  <script>
+    expandMenu();
+  </script>
+
+</body>
+</html>
