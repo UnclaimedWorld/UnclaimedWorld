@@ -10,12 +10,18 @@
     let platform = window.navigator.platform.toLowerCase();
     document.querySelector("#out").textContent = platform;
     let appleList = ['iphone', 'ipod', 'ipad', 'macintosh', 'macintel', 'macppc', 'mac68k', 'pike v7.6 release 92', 'pike v7.8 release 517'];
-    let androidList = ['android', 'linux armv8l'];
-    if(appleList.includes(platform)) {
-      window.location.href = 'https://www.apple.com/ru/ios/app-store/';
-    } else if(androidList.includes(platform)) {
-      window.location.href = 'https://play.google.com/store/apps?hl=ru';
-    }
+    let androidList = ['android', 'linux '];
+    (function() {
+      for(let key of androidList) {
+        if(platform.includes(key)) {
+          window.location.href = 'https://play.google.com/store/apps?hl=ru';
+          return;
+        }
+      }
+      if(appleList.includes(platform)) {
+        window.location.href = 'https://www.apple.com/ru/ios/app-store/';
+      }
+    })();
   </script>
 </body>
 </html>
