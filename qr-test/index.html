@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let platform = window.navigator.platform.toLowerCase();
+    let appleList = ['iphone', 'ipod', 'ipad', 'macintosh', 'macintel', 'macppc', 'mac68k', 'pike v7.6 release 92', 'pike v7.8 release 517'];
+    let androidList = ['android'];
+    if(appleList.includes(platform)) {
+      window.location.href = 'https://www.apple.com/ru/ios/app-store/';
+    } else if(androidList.includes(platform)) {
+      window.location.href = 'https://play.google.com/store/apps?hl=ru';
+    }
+  </script>
+</body>
+</html>
