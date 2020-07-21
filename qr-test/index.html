@@ -8,6 +8,7 @@
   <div id="out"></div>
   <script>
     let platform = window.navigator.platform.toLowerCase();
+    document.querySelector("#out").textContent = platform;
     let appleList = ['iphone', 'ipod', 'ipad', 'macintosh', 'macintel', 'macppc', 'mac68k', 'pike v7.6 release 92', 'pike v7.8 release 517'];
     let androidList = ['android', 'linux armv8l'];
     if(appleList.includes(platform)) {
